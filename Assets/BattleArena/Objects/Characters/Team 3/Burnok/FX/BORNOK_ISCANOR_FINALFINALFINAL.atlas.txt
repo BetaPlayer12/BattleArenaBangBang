@@ -1,0 +1,97 @@
+
+BORNOK_ISCANOR_FINALFINALFINAL.png
+size: 812,72
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+B00_0000
+  rotate: false
+  xy: 69, 3
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+B00_0001
+  rotate: false
+  xy: 135, 3
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+B00_0002
+  rotate: false
+  xy: 201, 3
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+B00_0003
+  rotate: false
+  xy: 267, 3
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+B00_0004
+  rotate: false
+  xy: 333, 3
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+B00_0005
+  rotate: false
+  xy: 399, 3
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+B00_0006
+  rotate: false
+  xy: 465, 3
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+B00_0007
+  rotate: false
+  xy: 531, 3
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+B00_0008
+  rotate: false
+  xy: 597, 3
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+B00_0009
+  rotate: false
+  xy: 663, 3
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+BORNOK BARRIER copy
+  rotate: false
+  xy: 2, 2
+  size: 65, 65
+  orig: 65, 65
+  offset: 0, 0
+  index: -1
+BORNOK DRONE
+  rotate: true
+  xy: 795, 50
+  size: 17, 14
+  orig: 17, 14
+  offset: 0, 0
+  index: -1
+Blur
+  rotate: false
+  xy: 729, 3
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1

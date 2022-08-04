@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cbe28fbacd529df4f82254e7d3492dc1, type: 3}
+  m_Name: SalabayDashAbilityInfo
+  m_EditorClassIdentifier: 
+  m_abilityName: Locus Stream
+  m_icon: {fileID: 21300000, guid: 77a5ffaac1e9c3e48b7fd078a7e22598, type: 3}
+  m_reference: {fileID: 21300000, guid: 77a5ffaac1e9c3e48b7fd078a7e22598, type: 3}
+  m_description: Activates a low cost water engine fueled squid arm to quickly dash
+    around the battlefield

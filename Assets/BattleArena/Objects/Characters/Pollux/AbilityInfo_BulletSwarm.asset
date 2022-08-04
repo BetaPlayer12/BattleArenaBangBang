@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cbe28fbacd529df4f82254e7d3492dc1, type: 3}
+  m_Name: AbilityInfo_BulletSwarm
+  m_EditorClassIdentifier: 
+  m_abilityName: Bullet Swarm
+  m_icon: {fileID: 21300000, guid: b7625a0d27729f748a0dabec720fa0c2, type: 3}
+  m_reference: {fileID: 21300000, guid: 45a47ae479d57544683a301c06f2417d, type: 3}
+  m_description: 'Shoots a bunch of bullets in front of the user. Wow. How original.
+
+
+    -
+    I have a very strict gun control policy: if there''s a gun around, I want to
+    be in control of it. (Clint Eastwood).'

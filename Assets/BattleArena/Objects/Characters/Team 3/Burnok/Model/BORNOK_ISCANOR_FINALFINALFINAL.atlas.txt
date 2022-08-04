@@ -1,0 +1,230 @@
+
+BORNOK_ISCANOR_FINALFINALFINAL.png
+size: 548,136
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+B00_0000
+  rotate: false
+  xy: 2, 2
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+B00_0001
+  rotate: false
+  xy: 68, 2
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+B00_0002
+  rotate: false
+  xy: 69, 69
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+B00_0003
+  rotate: false
+  xy: 134, 3
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+B00_0004
+  rotate: false
+  xy: 135, 69
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+B00_0005
+  rotate: false
+  xy: 200, 3
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+B00_0006
+  rotate: false
+  xy: 201, 69
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+B00_0007
+  rotate: false
+  xy: 266, 3
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+B00_0008
+  rotate: false
+  xy: 267, 69
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+B00_0009
+  rotate: false
+  xy: 332, 3
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+BODY
+  rotate: false
+  xy: 465, 103
+  size: 23, 30
+  orig: 23, 30
+  offset: 0, 0
+  index: -1
+BORNOK BARRIER copy
+  rotate: false
+  xy: 2, 68
+  size: 65, 65
+  orig: 65, 65
+  offset: 0, 0
+  index: -1
+BORNOK DRONE
+  rotate: true
+  xy: 516, 86
+  size: 17, 14
+  orig: 17, 14
+  offset: 0, 0
+  index: -1
+Blur
+  rotate: false
+  xy: 333, 69
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+HEAD
+  rotate: true
+  xy: 492, 75
+  size: 28, 22
+  orig: 28, 22
+  offset: 0, 0
+  index: -1
+LEFT ARM
+  rotate: false
+  xy: 516, 71
+  size: 8, 13
+  orig: 8, 13
+  offset: 0, 0
+  index: -1
+LEFT ARM SHOULDER
+  rotate: false
+  xy: 517, 123
+  size: 10, 10
+  orig: 10, 10
+  offset: 0, 0
+  index: -1
+LEFT HAND
+  rotate: false
+  xy: 532, 100
+  size: 9, 9
+  orig: 9, 9
+  offset: 0, 0
+  index: -1
+LEFT ROCKET
+  rotate: false
+  xy: 465, 73
+  size: 25, 28
+  orig: 25, 28
+  offset: 0, 0
+  index: -1
+LEFT ROCKET HOLDER
+  rotate: false
+  xy: 538, 124
+  size: 8, 9
+  orig: 8, 9
+  offset: 0, 0
+  index: -1
+LEFT THUMB 1
+  rotate: false
+  xy: 530, 60
+  size: 7, 9
+  orig: 7, 9
+  offset: 0, 0
+  index: -1
+LEFT THUMB 2
+  rotate: false
+  xy: 529, 123
+  size: 7, 10
+  orig: 7, 10
+  offset: 0, 0
+  index: -1
+Luh
+  rotate: false
+  xy: 398, 3
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+RIGHT ARM
+  rotate: false
+  xy: 526, 71
+  size: 8, 13
+  orig: 8, 13
+  offset: 0, 0
+  index: -1
+RIGHT ARM SHOULDER
+  rotate: false
+  xy: 517, 111
+  size: 10, 10
+  orig: 10, 10
+  offset: 0, 0
+  index: -1
+RIGHT HAND
+  rotate: false
+  xy: 532, 89
+  size: 9, 9
+  orig: 9, 9
+  offset: 0, 0
+  index: -1
+RIGHT ROCKET
+  rotate: false
+  xy: 490, 105
+  size: 25, 28
+  orig: 25, 28
+  offset: 0, 0
+  index: -1
+RIGHT ROCKET HOLDER
+  rotate: false
+  xy: 538, 113
+  size: 8, 9
+  orig: 8, 9
+  offset: 0, 0
+  index: -1
+RIGHT THUMB 1
+  rotate: false
+  xy: 536, 78
+  size: 7, 9
+  orig: 7, 9
+  offset: 0, 0
+  index: -1
+RIGHT THUMB 2
+  rotate: false
+  xy: 529, 111
+  size: 7, 10
+  orig: 7, 10
+  offset: 0, 0
+  index: -1
+Takbo
+  rotate: false
+  xy: 399, 69
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+TimePers
+  rotate: false
+  xy: 464, 3
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1

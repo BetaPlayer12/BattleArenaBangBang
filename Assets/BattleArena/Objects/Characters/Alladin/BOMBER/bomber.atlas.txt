@@ -1,0 +1,132 @@
+
+bomber.png
+size: 3492,1204
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+1fx
+  rotate: false
+  xy: 2486, 700
+  size: 500, 500
+  orig: 500, 500
+  offset: 0, 0
+  index: -1
+2fx
+  rotate: false
+  xy: 2486, 198
+  size: 500, 500
+  orig: 500, 500
+  offset: 0, 0
+  index: -1
+3fx
+  rotate: false
+  xy: 2988, 700
+  size: 500, 500
+  orig: 500, 500
+  offset: 0, 0
+  index: -1
+4fx
+  rotate: false
+  xy: 2988, 198
+  size: 500, 500
+  orig: 500, 500
+  offset: 0, 0
+  index: -1
+Layer 13
+  rotate: true
+  xy: 2970, 156
+  size: 40, 64
+  orig: 40, 64
+  offset: 0, 0
+  index: -1
+aura
+  rotate: false
+  xy: 1244, 10
+  size: 1240, 1190
+  orig: 1240, 1190
+  offset: 0, 0
+  index: -1
+bag alone
+  rotate: false
+  xy: 2638, 68
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+bomb
+  rotate: false
+  xy: 3257, 182
+  size: 31, 14
+  orig: 31, 14
+  offset: 0, 0
+  index: -1
+bomb inside the bag
+  rotate: false
+  xy: 3218, 182
+  size: 37, 14
+  orig: 37, 14
+  offset: 0, 0
+  index: -1
+fx_light
+  rotate: false
+  xy: 2, 2
+  size: 1240, 1198
+  orig: 1240, 1198
+  offset: 0, 0
+  index: -1
+head
+  rotate: false
+  xy: 3036, 159
+  size: 38, 37
+  orig: 38, 37
+  offset: 0, 0
+  index: -1
+left foot1
+  rotate: true
+  xy: 3290, 187
+  size: 9, 16
+  orig: 9, 16
+  offset: 0, 0
+  index: -1
+mines
+  rotate: false
+  xy: 2486, 46
+  size: 150, 150
+  orig: 150, 150
+  offset: 0, 0
+  index: -1
+right foot
+  rotate: false
+  xy: 3308, 180
+  size: 9, 16
+  orig: 9, 16
+  offset: 0, 0
+  index: -1
+right hand
+  rotate: true
+  xy: 2898, 155
+  size: 41, 70
+  orig: 41, 70
+  offset: 0, 0
+  index: -1
+scarf
+  rotate: true
+  xy: 3157, 163
+  size: 33, 59
+  orig: 33, 59
+  offset: 0, 0
+  index: -1
+swish
+  rotate: false
+  xy: 3076, 161
+  size: 79, 35
+  orig: 79, 35
+  offset: 0, 0
+  index: -1
+whole body
+  rotate: false
+  xy: 2768, 68
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1

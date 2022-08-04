@@ -1,0 +1,76 @@
+
+fasxaa3.png
+size: 2048,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Layer 26
+  rotate: true
+  xy: 1150, 34
+  size: 60, 149
+  orig: 60, 149
+  offset: 0, 0
+  index: -1
+Layer 27
+  rotate: false
+  xy: 1150, 96
+  size: 67, 140
+  orig: 67, 140
+  offset: 0, 0
+  index: -1
+Layer 28
+  rotate: true
+  xy: 2, 2
+  size: 234, 231
+  orig: 234, 231
+  offset: 0, 0
+  index: -1
+Layer 29
+  rotate: true
+  xy: 1219, 141
+  size: 95, 85
+  orig: 95, 85
+  offset: 0, 0
+  index: -1
+Layer 32
+  rotate: true
+  xy: 235, 14
+  size: 22, 60
+  orig: 22, 60
+  offset: 0, 0
+  index: -1
+Layer 34 copy
+  rotate: true
+  xy: 235, 38
+  size: 198, 181
+  orig: 198, 181
+  offset: 0, 0
+  index: -1
+alef
+  rotate: true
+  xy: 601, 38
+  size: 198, 181
+  orig: 198, 181
+  offset: 0, 0
+  index: -1
+alef2
+  rotate: true
+  xy: 784, 38
+  size: 198, 181
+  orig: 198, 181
+  offset: 0, 0
+  index: -1
+glow
+  rotate: true
+  xy: 418, 38
+  size: 198, 181
+  orig: 198, 181
+  offset: 0, 0
+  index: -1
+muzzle
+  rotate: true
+  xy: 967, 38
+  size: 198, 181
+  orig: 198, 181
+  offset: 0, 0
+  index: -1
