@@ -90,8 +90,6 @@ namespace BattleArena.Gameplay.Systems
             {
                 var startInfo = m_playerData[character].startInfo;
                 character.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
-                character.primaryAbility.ResetCooldown();
-                character.secondaryAbility.ResetCooldown();
                 character.transform.position = startInfo.startPosition;
                 character.transform.rotation = startInfo.startRotation;
                 var health = character.GetComponentInChildren<IHealth>();

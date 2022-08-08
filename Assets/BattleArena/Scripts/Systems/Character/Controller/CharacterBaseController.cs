@@ -5,13 +5,12 @@ using UnityEngine;
 
 namespace BattleArena.Gameplay.Characters.Controllers
 {
+
     public abstract class CharacterBaseController : MonoBehaviour
     {
         [SerializeField]
         protected InputTranslator m_translator;
 
-        protected Ability m_primaryAbility;
-        protected Ability m_secondaryAbility;
         private CharacterMovement m_movement;
         private CharacterRotation m_rotation;
 
@@ -34,8 +33,6 @@ namespace BattleArena.Gameplay.Characters.Controllers
             m_movement = GetComponent<CharacterMovement>();
             m_rotation = GetComponent<CharacterRotation>();
             var character = GetComponent<Character>();
-            m_primaryAbility = character.primaryAbility;
-            m_secondaryAbility = character.secondaryAbility;
         }
 
         protected virtual void OnEnable()
@@ -57,26 +54,12 @@ namespace BattleArena.Gameplay.Characters.Controllers
         protected virtual void Update()
         {
             HandleRotation();
-            if (m_primaryAbility.isOnCooldown == false && m_translator.primaryAbility.isPressed)
-            {
-                m_primaryAbility.Execute();
-            }
-            else if (m_secondaryAbility.isOnCooldown == false && m_translator.secondaryAbility.isPressed)
-            {
-                m_secondaryAbility.Execute();
-            }
+
         }
 
         private void LateUpdate()
         {
-            if (m_primaryAbility.isOnCooldown)
-            {
-                m_primaryAbility.HandleCooldown();
-            }
-            if (m_secondaryAbility.isOnCooldown)
-            {
-                m_secondaryAbility.HandleCooldown();
-            }
+
         }
     }
 }

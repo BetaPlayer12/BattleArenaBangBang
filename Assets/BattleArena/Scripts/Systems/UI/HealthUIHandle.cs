@@ -39,7 +39,7 @@ namespace BattleArena.Gameplay.UI
 
         private void OnHealthValueChange(int currentHealth)
         {
-            for (int i = 0; i < m_maxHealth; i++)
+            for (int i = 0; i < m_uis.Count; i++)
             {
                 var ui = m_uis[i];
                 var value = Mathf.Min(currentHealth, ui.maxValue);

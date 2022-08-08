@@ -1,4 +1,5 @@
-﻿using UnityEngine.InputSystem;
+﻿using UnityEngine;
+using UnityEngine.InputSystem;
 
 namespace BattleArena.Gameplay.Inputs
 {
@@ -6,6 +7,7 @@ namespace BattleArena.Gameplay.Inputs
     public class ButtonTranslator : IInputTranslatorModule
     {
         private bool m_isPressed;
+        [SerializeField]
         private bool m_isHeld;
         private bool m_isReleased;
 

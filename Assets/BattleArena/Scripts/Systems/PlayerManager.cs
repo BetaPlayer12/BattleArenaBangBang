@@ -18,10 +18,10 @@ namespace BattleArena.Gameplay
             public CharacterData data;
             public CharacterBaseController controller;
 
-            public PlayerData(CharacterData data,CharacterBaseController controller)
+            public PlayerData(CharacterData data, CharacterBaseController controller)
             {
                 this.data = data;
-   
+
                 this.controller = controller;
             }
         }
@@ -38,6 +38,8 @@ namespace BattleArena.Gameplay
         private CharacterUIHandle m_player2UI;
         [SerializeField]
         private GameObject m_playerInputTemplate;
+        [SerializeField]
+        private WeaponData m_defaultWeapon;
 
         private List<GameObject> m_instanceCache;
 
@@ -63,10 +65,19 @@ namespace BattleArena.Gameplay
 
             var p1Input = InstantiatePlayerInput(m_playerInputTemplate, 1);
             var p1 = m_characterInitializer.CreateCharacter(m_command.player1.prefab, p1Input.GetComponent<InputTranslator>());
+            p1.gameObject.layer = LayerMask.NameToLayer("Player 1");
             m_player1UI.DisplayCharacterData(p1, m_command.player1);
+            var p1Weapon = p1.GetComponentInChildren<Weapon>();
+            p1Weapon.SetBulletPhysics("Projectile 1");
+            p1Weapon.SetData(m_defaultWeapon);
+
             var p2Input = InstantiatePlayerInput(m_playerInputTemplate, 2);
             var p2 = m_characterInitializer.CreateCharacter(m_command.player2.prefab, p2Input.GetComponent<InputTranslator>());
+            p2.gameObject.layer = LayerMask.NameToLayer("Player 2");
             m_player2UI.DisplayCharacterData(p2, m_command.player2);
+            var p2Weapon = p2.GetComponentInChildren<Weapon>();
+            p2Weapon.SetBulletPhysics("Projectile 2");
+            p2Weapon.SetData(m_defaultWeapon);
 
             m_playerData.Clear();
             m_playerData.Add(p1, new PlayerData(m_command.player1, p1.GetComponentInChildren<CharacterBaseController>()));

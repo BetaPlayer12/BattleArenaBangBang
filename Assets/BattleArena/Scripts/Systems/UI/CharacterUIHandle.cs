@@ -1,5 +1,6 @@
 ﻿using BattleArena.Gameplay.Characters;
 using BattleArena.Gameplay.Combat;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -17,17 +18,14 @@ namespace BattleArena.Gameplay.UI
         [SerializeField]
         private HealthUIHandle m_healthUI;
         [SerializeField]
-        private AbilityUIHandle m_primaryAbilityUI;
-        [SerializeField]
-        private AbilityUIHandle m_secondayAbilityUI;
+        private WeaponUI m_weapon;
 
         public void DisplayCharacterData(Character character, CharacterData data)
         {
             m_characterName.text = data.characterName;
             m_icon.sprite = data.profilePic;
             m_healthUI.Display(character.GetComponentInChildren<Health>());
-            m_primaryAbilityUI.Display(character.primaryAbility);
-            m_secondayAbilityUI.Display(character.secondaryAbility);
+            m_weapon.Display(character.GetComponentInChildren<Weapon>());
         }
     }
 }

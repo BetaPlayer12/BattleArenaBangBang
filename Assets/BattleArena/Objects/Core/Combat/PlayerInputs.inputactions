@@ -11,7 +11,8 @@
                     "id": "44a0db33-e6b2-43a9-9884-9a9d31d9e5ce",
                     "expectedControlType": "Vector2",
                     "processors": "",
-                    "interactions": ""
+                    "interactions": "",
+                    "initialStateCheck": true
                 },
                 {
                     "name": "Rotate",
@@ -19,15 +20,17 @@
                     "id": "1bee88b7-8ab1-4340-b169-3f9567a3d1fa",
                     "expectedControlType": "Vector2",
                     "processors": "",
-                    "interactions": ""
+                    "interactions": "",
+                    "initialStateCheck": true
                 },
                 {
-                    "name": "PrimaryAbility",
+                    "name": "WeaponFire",
                     "type": "Button",
                     "id": "89a43d9b-44d9-46ca-8445-35c3e0392374",
                     "expectedControlType": "Button",
                     "processors": "",
-                    "interactions": "Press(behavior=2)"
+                    "interactions": "Press(behavior=2)",
+                    "initialStateCheck": false
                 },
                 {
                     "name": "SecondaryAbility",
@@ -35,7 +38,8 @@
                     "id": "2eaf410b-3fe1-4dee-a706-4e00a347a626",
                     "expectedControlType": "Button",
                     "processors": "",
-                    "interactions": "Press(behavior=2)"
+                    "interactions": "Press(behavior=2)",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -101,7 +105,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "PrimaryAbility",
+                    "action": "WeaponFire",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -183,7 +187,8 @@
                     "id": "9ccb5b79-f17e-4888-a0b0-d2e9f1143a11",
                     "expectedControlType": "Vector2",
                     "processors": "",
-                    "interactions": ""
+                    "interactions": "",
+                    "initialStateCheck": true
                 },
                 {
                     "name": "Rotate",
@@ -191,15 +196,17 @@
                     "id": "c5da5b6d-1b4c-4331-ba91-5716c13daf74",
                     "expectedControlType": "Vector2",
                     "processors": "",
-                    "interactions": ""
+                    "interactions": "",
+                    "initialStateCheck": true
                 },
                 {
-                    "name": "PrimaryAbility",
+                    "name": "WeaponFire",
                     "type": "Button",
                     "id": "b8719f6e-69ae-4384-9ecc-49679ea5bdd0",
                     "expectedControlType": "Button",
                     "processors": "",
-                    "interactions": "Press(behavior=2)"
+                    "interactions": "Press(behavior=2)",
+                    "initialStateCheck": false
                 },
                 {
                     "name": "SecondaryAbility",
@@ -207,7 +214,8 @@
                     "id": "15360a03-bdf1-40fe-9823-a1dad984d644",
                     "expectedControlType": "Button",
                     "processors": "",
-                    "interactions": "Press(behavior=2)"
+                    "interactions": "Press(behavior=2)",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -273,7 +281,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "PrimaryAbility",
+                    "action": "WeaponFire",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -355,7 +363,8 @@
                     "id": "65659946-3208-4d17-806a-1fa3b3d2e458",
                     "expectedControlType": "Vector2",
                     "processors": "",
-                    "interactions": ""
+                    "interactions": "",
+                    "initialStateCheck": true
                 },
                 {
                     "name": "Submit",
@@ -363,7 +372,8 @@
                     "id": "9c7ef7c9-b8ca-49a5-b1b3-eb33c29df1fc",
                     "expectedControlType": "Button",
                     "processors": "",
-                    "interactions": ""
+                    "interactions": "",
+                    "initialStateCheck": false
                 },
                 {
                     "name": "Cancel",
@@ -371,7 +381,8 @@
                     "id": "baae200a-ec0e-4489-a418-576c16205d57",
                     "expectedControlType": "Button",
                     "processors": "",
-                    "interactions": ""
+                    "interactions": "",
+                    "initialStateCheck": false
                 },
                 {
                     "name": "Point",
@@ -379,7 +390,8 @@
                     "id": "6300ff11-4d13-4931-96bd-fc5f31bf6982",
                     "expectedControlType": "Vector2",
                     "processors": "",
-                    "interactions": ""
+                    "interactions": "",
+                    "initialStateCheck": false
                 },
                 {
                     "name": "Click",
@@ -387,7 +399,8 @@
                     "id": "912b3d6b-7118-4ec1-9179-09a02de8d474",
                     "expectedControlType": "Button",
                     "processors": "",
-                    "interactions": ""
+                    "interactions": "",
+                    "initialStateCheck": false
                 },
                 {
                     "name": "ScrollWheel",
@@ -395,7 +408,8 @@
                     "id": "20b33b9d-4e01-4e59-9f3e-02f093584953",
                     "expectedControlType": "Vector2",
                     "processors": "",
-                    "interactions": ""
+                    "interactions": "",
+                    "initialStateCheck": false
                 },
                 {
                     "name": "MiddleClick",
@@ -403,7 +417,8 @@
                     "id": "c50a8a7e-3749-4e93-b9ca-7f584d6e9789",
                     "expectedControlType": "",
                     "processors": "",
-                    "interactions": ""
+                    "interactions": "",
+                    "initialStateCheck": false
                 },
                 {
                     "name": "RightClick",
@@ -411,7 +426,8 @@
                     "id": "40a97586-31a1-475f-9b64-bf8f78b08356",
                     "expectedControlType": "",
                     "processors": "",
-                    "interactions": ""
+                    "interactions": "",
+                    "initialStateCheck": false
                 },
                 {
                     "name": "TrackedDevicePosition",
@@ -419,7 +435,8 @@
                     "id": "d27f2652-49c1-4ec5-bece-9be53ee1b3f5",
                     "expectedControlType": "Vector3",
                     "processors": "",
-                    "interactions": ""
+                    "interactions": "",
+                    "initialStateCheck": false
                 },
                 {
                     "name": "TrackedDeviceOrientation",
@@ -427,7 +444,8 @@
                     "id": "af2b3310-7cca-47c4-8170-2701f3f432ca",
                     "expectedControlType": "Quaternion",
                     "processors": "",
-                    "interactions": ""
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [

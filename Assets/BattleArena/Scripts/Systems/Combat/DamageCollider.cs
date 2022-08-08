@@ -8,12 +8,7 @@ namespace BattleArena.Gameplay.Combat
         private Attacker m_attacker;
         public event Action OnCollisionWithDamageable;
 
-        private void Awake()
-        {
-            m_attacker = GetComponentInParent<Attacker>();
-        }
-
-        private void OnTriggerEnter2D(Collider2D collision)
+        private void OnCollision(Collider2D collision)
         {
             if (collision.CompareTag("Hitbox"))
             {
@@ -21,6 +16,21 @@ namespace BattleArena.Gameplay.Combat
                 m_attacker.DealDamageTo(damageable);
                 OnCollisionWithDamageable?.Invoke();
             }
+        }
+
+        private void Awake()
+        {
+            m_attacker = GetComponentInParent<Attacker>();
+        }
+
+        private void OnTriggerEnter2D(Collider2D collision)
+        {
+            OnCollision(collision);
+        }
+
+        private void OnCollisionEnter2D(Collision2D collision)
+        {
+            OnCollision(collision.collider);
         }
     }
 }

@@ -25,6 +25,11 @@ namespace BattleArena.Gameplay
         [SerializeField]
         private GameTimer m_timer;
 
+        [SerializeField]
+        private PickupSpawnHandle m_pickupSpawnHandle;
+        [SerializeField]
+        private ArenaShrinker m_arenaShrinker;
+
         [SerializeField, MinValue(1)]
         private int m_combatCountdownDuration;
         private bool m_forceTimerReset;
@@ -45,6 +50,7 @@ namespace BattleArena.Gameplay
         public void ResetCombat()
         {
             m_combatManager.ResetPlayerStates();
+            m_playerManager.EnablePlayerControllers(false);
             m_timer.ResetTime();
             m_timer.StopTime();
             m_forceTimerReset = true;
@@ -56,18 +62,20 @@ namespace BattleArena.Gameplay
         {
             m_combatManager.ClearCache();
             m_playerManager.DestroyAllPlayerCharacters();
+            m_pickupSpawnHandle.enabled = false;
+            m_arenaShrinker.enabled = false;
         }
 
         public void Pause()
         {
             Time.timeScale = 0;
-            //m_playerManager.EnablePlayerControllers(false);
+            m_playerManager.EnablePlayerControllers(false);
         }
 
         public void Resume()
         {
             Time.timeScale = 1;
-            //m_playerManager.EnablePlayerControllers(true);
+            m_playerManager.EnablePlayerControllers(true);
         }
 
         public void ForceCountdown()
@@ -79,6 +87,10 @@ namespace BattleArena.Gameplay
 
         private IEnumerator StartCombatCountdownRoutine()
         {
+            m_pickupSpawnHandle.Reset();
+            m_pickupSpawnHandle.enabled = false;
+            m_arenaShrinker.Reset();
+            m_arenaShrinker.enabled = false;
             m_playerManager.EnablePlayerControllers(false);
             yield return new WaitForSecondsRealtime(1f);
             m_combatCountdownHandle.ExecuteCountdown(m_combatCountdownDuration);
@@ -86,6 +98,8 @@ namespace BattleArena.Gameplay
             m_combatCountdownHandle.ForceStopExecution();
             m_playerManager.EnablePlayerControllers(true);
             GameEventMessage.SendEvent("StartTimerOver");
+            m_pickupSpawnHandle.enabled = true;
+            m_arenaShrinker.enabled = true;
             m_timer.StartTime();
         }
 
@@ -121,6 +135,8 @@ namespace BattleArena.Gameplay
         {
             m_combatManager.PlayerWon += OnPlayerWon;
             m_timer.TimeUpdated += OnTimerUpdate;
+            m_pickupSpawnHandle.enabled = false;
+            m_arenaShrinker.enabled = false;
         }
 
     }

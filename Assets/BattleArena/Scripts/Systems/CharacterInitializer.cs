@@ -30,12 +30,12 @@ namespace BattleArena.Gameplay.Systems
 
         public static int CalculateHealth(int enduranceValue)
         {
-            return enduranceValue * 2;
+            return 100;
         }
 
         public static float CalculateSpeed(int agilityValue)
         {
-            return agilityValue * 5;
+            return 10;
         }
 
         public Character CreateCharacter(GameObject prefab, InputTranslator input)
@@ -45,8 +45,6 @@ namespace BattleArena.Gameplay.Systems
             var character = instance.GetComponent<Character>();
             var statInfo = character.statInfo;
             instance.GetComponent<IMovement>().SetSpeed(CalculateSpeed(statInfo.agility));
-            InitializeAbilities(character.primaryAbility, statInfo);
-            InitializeAbilities(character.secondaryAbility, statInfo);
             var health = instance.GetComponentInChildren<Health>();
             InitializeHealth(health, statInfo);
             return character;

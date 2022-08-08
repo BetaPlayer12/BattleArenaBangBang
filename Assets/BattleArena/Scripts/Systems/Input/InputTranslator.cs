@@ -9,9 +9,8 @@ namespace BattleArena.Gameplay.Inputs
     {
         private Vector2Translator m_movementAxisInput;
         private Vector2Translator m_rotationAxisInput;
-
-        private ButtonTranslator m_primaryAbility;
-        private ButtonTranslator m_secondaryAbility;
+        [SerializeField]
+        private ButtonTranslator m_weaponInput;
 
         private IInputTranslatorModule[] m_modulesArray;
 
@@ -19,8 +18,7 @@ namespace BattleArena.Gameplay.Inputs
         public float movementVerticalInput => m_movementAxisInput.value.y;
         public float rotationHorizontalInput => m_rotationAxisInput.value.x;
         public float rotationVerticalInput => m_rotationAxisInput.value.y;
-        public ButtonTranslator primaryAbility => m_primaryAbility;
-        public ButtonTranslator secondaryAbility => m_secondaryAbility;
+        public ButtonTranslator weaponInput => m_weaponInput;
 
         private void OnMove(InputValue inputValue)
         {
@@ -32,23 +30,17 @@ namespace BattleArena.Gameplay.Inputs
             m_rotationAxisInput.TranslateInput(inputValue);
         }
 
-        private void OnPrimaryAbility(InputValue inputValue)
+        private void OnWeaponFire(InputValue inputValue)
         {
-            m_primaryAbility.TranslateInput(inputValue);
-        }
-
-        private void OnSecondaryAbility(InputValue inputValue)
-        {
-            m_secondaryAbility.TranslateInput(inputValue);
+            m_weaponInput.TranslateInput(inputValue);
         }
 
         private void Awake()
         {
             m_movementAxisInput = new Vector2Translator();
             m_rotationAxisInput = new Vector2Translator();
-            m_primaryAbility = new ButtonTranslator();
-            m_secondaryAbility = new ButtonTranslator();
-            m_modulesArray = new IInputTranslatorModule[] { m_movementAxisInput, m_rotationAxisInput, m_primaryAbility, m_secondaryAbility };
+            m_weaponInput = new ButtonTranslator();
+            m_modulesArray = new IInputTranslatorModule[] { m_movementAxisInput, m_rotationAxisInput, m_weaponInput };
         }
 
         private void LateUpdate()
