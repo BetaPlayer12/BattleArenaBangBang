@@ -909,6 +909,7 @@ GameObject:
   - component: {fileID: 3624820968378628937}
   - component: {fileID: 8761576746139651629}
   - component: {fileID: 7273757798826179018}
+  - component: {fileID: 7285195936657162143}
   m_Layer: 0
   m_Name: HealthBar
   m_TagString: Untagged
@@ -991,6 +992,21 @@ MonoBehaviour:
   m_main: {fileID: 2489681025903897532}
   m_icon: {fileID: 8098698048300800794}
   m_maxValue: 100
+--- !u!114 &7285195936657162143
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2489681025903897532}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71b2bb5b19642074984ec149e69b065c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_bar: {fileID: 8098698048300800794}
+  m_shieldedColor: {r: 0, g: 0.6784314, b: 1, a: 1}
+  m_nonShieldedColor: {r: 1, g: 0, b: 0, a: 1}
 --- !u!1 &3825621463057852752
 GameObject:
   m_ObjectHideFlags: 0
@@ -2600,7 +2616,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_Color: {r: 0, g: 0.67775345, b: 1, a: 1}
   m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 0
@@ -3417,4 +3433,5 @@ MonoBehaviour:
   m_characterName: {fileID: 299810535}
   m_icon: {fileID: 7670225558727138360}
   m_healthUI: {fileID: 6580767032712707224}
+  m_shieldUI: {fileID: 7285195936657162143}
   m_weapon: {fileID: 3922766852343698848}

@@ -3,7 +3,6 @@ using UnityEngine;
 
 namespace BattleArena
 {
-
     public class PewMechanism : FiringMechanism
     {
         [SerializeField]

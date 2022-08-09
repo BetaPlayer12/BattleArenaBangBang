@@ -7,6 +7,8 @@ namespace BattleArena.Gameplay.Combat
     {
         [SerializeField]
         private Health m_health;
+        [SerializeField]
+        private Shield m_shield;
 
         public event Action IsDead;
 
@@ -14,10 +16,17 @@ namespace BattleArena.Gameplay.Combat
 
         public void TakeDamage(int value)
         {
-            m_health.Add(-value);
-            if(m_health.currentValue == 0)
+            if (m_shield.isActivated)
             {
-                IsDead?.Invoke();
+                m_shield.TakeDamage(value);
+            }
+            else
+            {
+                m_health.Add(-value);
+                if (m_health.currentValue == 0)
+                {
+                    IsDead?.Invoke();
+                }
             }
         }
 
