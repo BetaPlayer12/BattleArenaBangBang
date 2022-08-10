@@ -98,7 +98,7 @@ GameObject:
   - component: {fileID: 3460603714900875480}
   - component: {fileID: 5745964552246096430}
   - component: {fileID: 1409406867637624695}
-  - component: {fileID: 1404797530852060732}
+  - component: {fileID: -3551254855263055905}
   m_Layer: 0
   m_Name: BlackOutItemPickup
   m_TagString: Untagged
@@ -234,7 +234,7 @@ SortingGroup:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!114 &1404797530852060732
+--- !u!114 &-3551254855263055905
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -243,11 +243,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 6245217504514741361}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 98b2db84338671549934795191074c9b, type: 3}
+  m_Script: {fileID: 11500000, guid: 464eab05528c1c74d919b9aba3164cf7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_lifeTime: 8
-  shield: {fileID: 3303846382332503203, guid: e49ae3d1661e74b41b4960f6d9543c1c, type: 3}
+  blackOutPrefab: {fileID: 5636714443666297970, guid: e9bc642ba3e43a548a000047409ec071,
+    type: 3}
 --- !u!1 &7057973765505704698
 GameObject:
   m_ObjectHideFlags: 0

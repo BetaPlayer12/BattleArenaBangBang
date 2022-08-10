@@ -1,18 +1,15 @@
+using BattleArena;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BlackOutItemPickUp : MonoBehaviour
+public class BlackOutItemPickUp : PickupItem
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    [SerializeField]
+    private GameObject blackOutPrefab;
 
-    // Update is called once per frame
-    void Update()
+    protected override void Pickup(Collider2D collision)
     {
-        
+        Instantiate(blackOutPrefab, collision.transform.position, Quaternion.identity, null);
     }
 }

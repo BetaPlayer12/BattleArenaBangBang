@@ -25,13 +25,25 @@ public class EnergySphere : Bullet
         foreach (Transform child in transform)
         {
             var danicaBullet = child.GetComponent<Bullet>();
-            danicaBullet.GetComponent<IAttacker>().SetDamage(damage);
+            if (danicaBullet != null)
+            {
+                danicaBullet.GetComponent<IAttacker>().SetDamage(damage);
+            }
         }
     }
 
     // Update is called once per frame
     void Update()
     {
+        foreach (Transform child in transform)
+        {
+            var danicaBullet = child.GetComponent<Rigidbody2D>();
+            if (danicaBullet != null)
+            {
+                danicaBullet.velocity /= 2;
+            }
+        }
+
         lifeTimer -= Time.deltaTime;
 
         if (lifeTimer <= 0)
@@ -64,6 +76,6 @@ public class EnergySphere : Bullet
 
     private void OnDrawGizmosSelected()
     {
-        Gizmos.DrawSphere(transform.position, 10);
+        Gizmos.DrawWireSphere(transform.position, 10);
     }
 }
