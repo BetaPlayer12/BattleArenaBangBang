@@ -8,6 +8,7 @@ namespace BattleArena.Gameplay.Characters.Controllers.Modules
         private Transform m_character;
 
         private Vector2 m_rotationInput;
+        public Vector2 currentRotation => m_character.right;
 
         public void Execute(float horizontalValue, float verticalValue)
         {
