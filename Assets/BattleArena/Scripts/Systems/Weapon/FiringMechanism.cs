@@ -18,6 +18,8 @@ namespace BattleArena
         {
             m_physicsLayer = layer;
         }
+
+        public abstract void AddStat(BulletStatData bulletStatData);
     }
 
 }
