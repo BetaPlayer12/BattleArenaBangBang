@@ -10,7 +10,7 @@ namespace BattleArena
     public abstract class Bullet : MonoBehaviour
     {
         [SerializeField]
-        private float m_speed = 30;
+        protected float m_speed = 30;
         [SerializeField]
         protected BulletData m_data;
 
@@ -21,7 +21,7 @@ namespace BattleArena
             m_speed = speed;
         }
 
-        protected virtual void OnCollision()
+        protected virtual void OnCollision(Collider2D collision)
         {
             Destroy(gameObject);
             Instantiate(m_data.impactFx, transform.position, transform.rotation);
@@ -46,14 +46,15 @@ namespace BattleArena
 
         private void OnCollisionEnter2D(Collision2D collision)
         {
-            if (IsCollidable(collision.collider))
-                OnCollision();
+            var collider = collision.collider;
+            if (IsCollidable(collider))
+                OnCollision(collider);
         }
 
         private void OnTriggerEnter2D(Collider2D collision)
         {
             if (IsCollidable(collision))
-                OnCollision();
+                OnCollision(collision);
         }
     }
 

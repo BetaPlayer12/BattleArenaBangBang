@@ -14,6 +14,11 @@ namespace BattleArena
 
         public override bool isOnCooldown => throw new System.NotImplementedException();
 
+        public override void AddStat(BulletStatData bulletStatData)
+        {
+            throw new System.NotImplementedException();
+        }
+
         public override void Charge(float delta)
         {
             throw new System.NotImplementedException();
