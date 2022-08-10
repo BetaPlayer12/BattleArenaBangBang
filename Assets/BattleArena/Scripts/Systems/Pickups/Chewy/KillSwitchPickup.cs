@@ -4,7 +4,7 @@ using BattleArena.Gameplay.Combat;
 using BattleArena.Gameplay.Systems;
 using UnityEngine;
 
-namespace BattleArena
+namespace BattleArena.Chewy
 {
     public class KillSwitchPickup : PickupItem
     {
@@ -26,9 +26,7 @@ namespace BattleArena
                         Players[i].GetComponent<Damageable>().Heal(-m_damageValue);
 
                 }
-                //collision.GetComponent<Damageable>().Heal(-m_damageValue);
-                //var character = CombatManager.GetOpponentData(collision.GetComponent<Character>());
-                //character.GetComponent<Health>();
+               
             }
         }
     }
