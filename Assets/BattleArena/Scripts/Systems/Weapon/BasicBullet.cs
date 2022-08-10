@@ -10,7 +10,7 @@ namespace BattleArena
     public abstract class Bullet : MonoBehaviour
     {
         [SerializeField]
-        private float m_speed = 30;
+        protected float m_speed = 30;
         [SerializeField]
         protected BulletData m_data;
 

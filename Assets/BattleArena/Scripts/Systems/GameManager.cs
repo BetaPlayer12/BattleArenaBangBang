@@ -36,6 +36,7 @@ namespace BattleArena.Gameplay
 
         public void StartCombat()
         {
+            RemoveAllBUllets();
             m_playerManager.SetPlayersToInitialize(m_characterSelectManager.CreateCharacterInitializationCommand());
             var instanceInfo = m_playerManager.CreatePlayerCharacters();
             m_combatManager.SetPlayers(instanceInfo.p1, instanceInfo.p2);
@@ -49,6 +50,7 @@ namespace BattleArena.Gameplay
 
         public void ResetCombat()
         {
+            RemoveAllBUllets();
             m_combatManager.ResetPlayerStates();
             m_playerManager.EnablePlayerControllers(false);
             m_timer.ResetTime();
@@ -128,6 +130,15 @@ namespace BattleArena.Gameplay
             else if (time <= 0)
             {
                 OnPlayerWon(m_combatManager.GetWinningCharacter());
+            }
+        }
+
+        private void RemoveAllBUllets()
+        {
+            var bullets = FindObjectsOfType<Bullet>();
+            for (int i = bullets.Length - 1; i >= 0; i--)
+            {
+                Destroy(bullets[i].gameObject);
             }
         }
 

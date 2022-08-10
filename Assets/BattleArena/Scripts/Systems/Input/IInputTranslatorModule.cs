@@ -6,7 +6,5 @@ namespace BattleArena.Gameplay.Inputs
     {
         void ResetValues();
         void ExecuteLateUpdate();
-
-        void TranslateInput(InputValue value);
     }
 }

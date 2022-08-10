@@ -6,6 +6,7 @@ namespace BattleArena.Gameplay.Inputs
     [System.Serializable]
     public class Vector2Translator : IInputTranslatorModule
     {
+        [SerializeField]
         private Vector2 m_value;
 
         public Vector2 value => m_value;
@@ -19,21 +20,14 @@ namespace BattleArena.Gameplay.Inputs
             m_value = Vector2.zero;
         }
 
-        public void TranslateInput(InputValue value)
+        public void TranslateXInput(InputValue value)
         {
-            m_value = value.Get<Vector2>();
+            m_value.x = value.Get<float>();
+        }
 
-            //m_value.x = ClampValue(m_value.x);
-            //m_value.y = ClampValue(m_value.y);
-
-            float ClampValue(float axisValue)
-            {
-                if (axisValue < 1 && axisValue > -1)
-                {
-                    axisValue = 0;
-                }
-                return axisValue;
-            }
+        public void TranslateYInput(InputValue value)
+        {
+            m_value.y = value.Get<float>();
         }
     }
 
