@@ -28,8 +28,8 @@ public class TestBullet : Bullet
 
     }
 
-    protected override void OnCollision()
+    protected override void OnCollision(Collider2D collision)
     {
-        base.OnCollision();
+        base.OnCollision(collision);
     }
 }

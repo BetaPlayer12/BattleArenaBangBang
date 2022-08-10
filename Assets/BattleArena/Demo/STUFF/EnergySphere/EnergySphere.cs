@@ -40,9 +40,9 @@ public class EnergySphere : Bullet
         }
     }
 
-    protected override void OnCollision()
+    protected override void OnCollision(Collider2D collision)
     {
-        base.OnCollision();
+        base.OnCollision(collision);
         LayerMask enemy = LayerMask.GetMask("Player 2");
 
         Collider2D collider = Physics2D.OverlapCircle(transform.position, 10, layer);
