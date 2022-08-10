@@ -1,18 +1,19 @@
-using System.Collections;
-using System.Collections.Generic;
+using BattleArena.Gameplay;
+using BattleArena.Gameplay.Characters;
+using BattleArena.Gameplay.Combat;
+using BattleArena.Gameplay.Systems;
 using UnityEngine;
 
-public class FireRatePickUp : MonoBehaviour
+namespace BattleArena.Chewy
 {
-    // Start is called before the first frame update
-    void Start()
+    public class FireRatePickUp : PickupItem
     {
-        
-    }
+        [SerializeField]
+        private BulletStatData m_additionalStat;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+        protected override void Pickup(Collider2D collision)
+        {
+            collision.GetComponent<Weapon>().AddData(m_additionalStat);
+        }
     }
 }
