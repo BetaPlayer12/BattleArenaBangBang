@@ -1,4 +1,5 @@
 using BattleArena;
+using BattleArena.Gameplay.Combat;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -11,13 +12,23 @@ public class ElectricFrisbeeBullet : Bullet
 
     protected override void MoveBullet()
     {
+        var velocity = m_rigidbody.velocity;
+        if (velocity.magnitude < m_speed)
+        {
+            base.MoveBullet();
+        }
     }
 
     protected override void OnCollision(Collider2D collision)
     {
         if (m_data.impactFx)
         {
-            Instantiate(m_data.impactFx, transform.position, transform.rotation);
+            var impact = Instantiate(m_data.impactFx, transform.position, transform.rotation);
+            var attacker = GetComponent<Attacker>();
+            impact.GetComponent<IAttacker>().SetDamage(attacker.damage);
+            impact.layer = gameObject.layer;
+            impact.GetComponentInChildren<Collider2D>().gameObject.layer = gameObject.layer;
+            impact.GetComponent<Rigidbody2D>().WakeUp();
         }
         m_currentBounceCount++;
         if (m_currentBounceCount >= m_maxBounceCount)

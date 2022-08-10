@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: PickupListData
   m_EditorClassIdentifier: 
   m_items:
-  - {fileID: 8882544927956698566, guid: 823ab52386b8f8e47b382da0281157d4, type: 3}
+  - {fileID: 9169872399048909086, guid: 91fc6d8d2c8f49b4a9ade2fe81d49c86, type: 3}
