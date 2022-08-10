@@ -18,6 +18,8 @@ namespace BattleArena
 
         public event Action<WeaponData> WeaponChanged;
         public bool needsToBeCharged => m_firingMechanism.needsToBeCharged;
+
+
         public WeaponData currentData => m_data;
 
 
@@ -39,6 +41,11 @@ namespace BattleArena
                 m_firingMechanism.SetPhysicsLayer(LayerMask.NameToLayer(m_bulletPhysics));
             }
             WeaponChanged?.Invoke(data);
+        }
+
+        public void AddData(BulletStatData statData)
+        {
+            m_firingMechanism.AddStat(statData);
         }
 
         public void Fire()

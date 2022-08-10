@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14aae77b8f267774cb831f1e0566062f, type: 3}
+  m_Name: EssentialsPickupData
+  m_EditorClassIdentifier: 
+  m_items:
+  - {fileID: 8882544927956698566, guid: 823ab52386b8f8e47b382da0281157d4, type: 3}
+  - {fileID: 5290201055095063694, guid: 83489db2d7de23a44b1c5e3003fac573, type: 3}
