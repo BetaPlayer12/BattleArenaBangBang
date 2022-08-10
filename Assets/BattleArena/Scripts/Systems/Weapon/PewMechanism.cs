@@ -7,8 +7,11 @@ namespace BattleArena
     {
         [SerializeField]
         private PewMechanismData m_data;
+        private float m_firingRate;
+        private int m_bulletDamage;
+        private float m_bulletSpeed;
 
-        private float cooldownDuration => 1f / m_data.firingRate;
+        private float cooldownDuration => 1f / (m_data.firingRate + m_firingRate);
         private float m_cooldownTimer = 0;
 
         public PewMechanism(PewMechanismData data)
@@ -41,8 +44,8 @@ namespace BattleArena
             bullet.transform.right = rotation;
             bullet.gameObject.layer = m_physicsLayer;
 
-            bullet.SetSpeed(m_data.bulletSpeed);
-            bullet.GetComponent<IAttacker>().SetDamage(m_data.bulletDamage);
+            bullet.SetSpeed(m_data.bulletSpeed + m_bulletSpeed);
+            bullet.GetComponent<IAttacker>().SetDamage(m_data.bulletDamage + m_bulletDamage);
             m_cooldownTimer = cooldownDuration;
         }
 
@@ -51,7 +54,12 @@ namespace BattleArena
             m_cooldownTimer -= delta;
         }
 
-
+        public override void AddStat(BulletStatData bulletStatData)
+        {
+            m_firingRate += bulletStatData.firingRate;
+            m_bulletDamage += bulletStatData.bulletDamage;
+            m_bulletSpeed += bulletStatData.bulletSpeed;
+        }
     }
 
 }
