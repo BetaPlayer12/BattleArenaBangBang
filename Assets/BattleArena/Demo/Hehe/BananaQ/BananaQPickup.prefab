@@ -97,7 +97,7 @@ GameObject:
   - component: {fileID: 5270060567201001594}
   - component: {fileID: 3933974292823415436}
   - component: {fileID: 7686154190981576661}
-  - component: {fileID: 2155962604140122745}
+  - component: {fileID: 560811181917959188}
   m_Layer: 0
   m_Name: BananaQPickup
   m_TagString: Untagged
@@ -233,7 +233,7 @@ SortingGroup:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!114 &2155962604140122745
+--- !u!114 &560811181917959188
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -242,7 +242,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 3426945390316387539}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 90a41cbff0837d64189259760fff2680, type: 3}
+  m_Script: {fileID: 11500000, guid: 7ee57e9888d07684fa37fbbe731231e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_lifeTime: 8
