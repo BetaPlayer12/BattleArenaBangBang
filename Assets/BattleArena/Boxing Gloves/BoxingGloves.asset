@@ -12,12 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa5c67383b7b4234ba0b04594ce0c59d, type: 3}
   m_Name: BoxingGloves
   m_EditorClassIdentifier: 
-  m_name: Boxing Glove
-  m_icon: {fileID: 0}
+  m_name: Boxing Gloves
+  m_icon: {fileID: 21300000, guid: 120fedda2575b3a468df205711a94d3b, type: 3}
   m_weaponFireType: 0
   m_pewMechanism:
     m_muzzleFireFX: {fileID: 0}
-    m_bullet: {fileID: 66345297713582750, guid: c9bb3d62a84d18648af9e1983bd699ca,
+    m_bullet: {fileID: 202592758044742417, guid: a86e811e96e6e924baadd08a85d4f787,
       type: 3}
     m_allocatedPoints: 10
     m_bulletSpeed: 25
