@@ -26,7 +26,7 @@ namespace BattleArena.Gameplay
         private GameTimer m_timer;
 
         [SerializeField]
-        private PickupSpawnHandle m_pickupSpawnHandle;
+        private PickupSpawnHandle[] m_pickupSpawnHandles;
         [SerializeField]
         private ArenaShrinker m_arenaShrinker;
 
@@ -64,7 +64,10 @@ namespace BattleArena.Gameplay
         {
             m_combatManager.ClearCache();
             m_playerManager.DestroyAllPlayerCharacters();
-            m_pickupSpawnHandle.enabled = false;
+            for (int i = 0; i < m_pickupSpawnHandles.Length; i++)
+            {
+                m_pickupSpawnHandles[i].enabled = false;
+            }
             m_arenaShrinker.enabled = false;
         }
 
@@ -89,8 +92,12 @@ namespace BattleArena.Gameplay
 
         private IEnumerator StartCombatCountdownRoutine()
         {
-            m_pickupSpawnHandle.Reset();
-            m_pickupSpawnHandle.enabled = false;
+            for (int i = 0; i < m_pickupSpawnHandles.Length; i++)
+            {
+                var handle = m_pickupSpawnHandles[i];
+                handle.Reset();
+                handle.enabled = false;
+            }
             m_arenaShrinker.Reset();
             m_arenaShrinker.enabled = false;
             m_playerManager.EnablePlayerControllers(false);
@@ -100,7 +107,10 @@ namespace BattleArena.Gameplay
             m_combatCountdownHandle.ForceStopExecution();
             m_playerManager.EnablePlayerControllers(true);
             GameEventMessage.SendEvent("StartTimerOver");
-            m_pickupSpawnHandle.enabled = true;
+            for (int i = 0; i < m_pickupSpawnHandles.Length; i++)
+            {
+                m_pickupSpawnHandles[i].enabled = true;
+            }
             m_arenaShrinker.enabled = true;
             m_timer.StartTime();
         }
@@ -146,7 +156,10 @@ namespace BattleArena.Gameplay
         {
             m_combatManager.PlayerWon += OnPlayerWon;
             m_timer.TimeUpdated += OnTimerUpdate;
-            m_pickupSpawnHandle.enabled = false;
+            for (int i = 0; i < m_pickupSpawnHandles.Length; i++)
+            {
+                m_pickupSpawnHandles[i].enabled = false;
+            }
             m_arenaShrinker.enabled = false;
         }
 
