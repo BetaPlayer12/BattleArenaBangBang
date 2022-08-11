@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: TeamFallOfTheOneNetPistolData
   m_EditorClassIdentifier: 
   m_name: TeamFallOfTheOnePistol
-  m_icon: {fileID: 21300000, guid: 763a97f35d5f26d47a43d6953b7707f9, type: 3}
+  m_icon: {fileID: 21300000, guid: ad459b11ec9b7c04687a3b4f5a0cf65f, type: 3}
   m_weaponFireType: 0
   m_pewMechanism:
     m_muzzleFireFX: {fileID: 0}
