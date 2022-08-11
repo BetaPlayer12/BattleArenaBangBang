@@ -21,6 +21,11 @@ namespace BattleArena
             m_speed = speed;
         }
 
+        public void ForceCollision()
+        {
+            OnCollision(null);
+        }
+
         protected virtual void OnCollision(Collider2D collision)
         {
             Destroy(gameObject);
