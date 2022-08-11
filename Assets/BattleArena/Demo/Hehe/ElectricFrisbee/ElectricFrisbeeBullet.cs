@@ -7,6 +7,12 @@ using UnityEngine;
 public class ElectricFrisbeeBullet : Bullet
 {
     [SerializeField]
+    private Transform m_trailFX;
+    [SerializeField]
+    private Transform m_model;
+    [SerializeField]
+    private float m_modelRotation;
+    [SerializeField]
     private int m_maxBounceCount;
     private int m_currentBounceCount;
 
@@ -40,5 +46,11 @@ public class ElectricFrisbeeBullet : Bullet
     private void Start()
     {
         base.MoveBullet();
+    }
+
+    private void Update()
+    {
+        m_model.Rotate(0, 0, m_modelRotation);
+        m_trailFX.right = m_rigidbody.velocity.normalized;
     }
 }
