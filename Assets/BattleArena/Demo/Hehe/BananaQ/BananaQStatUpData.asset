@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba4ebe3090579c84798b6d33ce98282a, type: 3}
   m_Name: BananaQStatUpData
   m_EditorClassIdentifier: 
-  m_allocatedPoints: 5
+  m_allocatedPoints: 0
   m_bulletSpeed: 0
-  m_bulletDamage: 0
-  m_firingRate: 0
+  m_bulletDamage: 2
+  m_firingRate: 0.8

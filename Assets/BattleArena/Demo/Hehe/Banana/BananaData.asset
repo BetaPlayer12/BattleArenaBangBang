@@ -16,7 +16,8 @@ MonoBehaviour:
   m_icon: {fileID: 21300000, guid: e155978cba8710348be7fbf729311991, type: 3}
   m_weaponFireType: 0
   m_pewMechanism:
-    m_muzzleFireFX: {fileID: 0}
+    m_muzzleFireFX: {fileID: 6516752859085478649, guid: cf1efba41ea26794aaf71c56a48e1f60,
+      type: 3}
     m_bullet: {fileID: 8448377639084354043, guid: 809e236f03e40444984bcb3e10bd5e1c,
       type: 3}
     m_allocatedPoints: 0
