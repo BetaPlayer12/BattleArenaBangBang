@@ -30,6 +30,7 @@ namespace BattleArena.Nonami.ShieldWall
                         float rotation = Players[i].transform.rotation.z;
                         if(rotation < 0)
                         {
+                            InstantiatedGameObject.transform.rotation = Quaternion.Euler(0, 0, 180);
                             InstantiatedGameObject.transform.position = new Vector3(Players[i].transform.position.x - 5, Players[i].transform.position.y, Players[i].transform.position.z);
                         }
                         else
