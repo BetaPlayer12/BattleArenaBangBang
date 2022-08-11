@@ -7,11 +7,12 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Blast
-  m_Shader: {fileID: 200, guid: 0000000000000000f000000000000000, type: 0}
+  m_Name: character_Material
+  m_Shader: {fileID: 4800000, guid: 1e8a610c9e01c3648bac42585e5fc676, type: 3}
   m_ValidKeywords: []
-  m_InvalidKeywords: []
-  m_LightmapFlags: 5
+  m_InvalidKeywords:
+  - _USE8NEIGHBOURHOOD_ON
+  m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
@@ -21,12 +22,21 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 41ceebca876e4d84bb86b6852a496184, type: 3}
+        m_Texture: {fileID: 2800000, guid: 5b37ab2fe1b58fd4d8eaab0b3e731649, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _InvFade: 3
+    - _Cutoff: 0.1
+    - _OutlineMipLevel: 0
+    - _OutlineReferenceTexWidth: 1024
+    - _OutlineSmoothness: 1
+    - _OutlineWidth: 3
+    - _StencilComp: 8
+    - _StencilRef: 1
+    - _StraightAlphaInput: 0
+    - _ThresholdEnd: 0.25
+    - _Use8Neighbourhood: 1
     m_Colors:
-    - _TintColor: {r: 0.24154504, g: 0.78943515, b: 0.8679245, a: 0.5}
+    - _OutlineColor: {r: 1, g: 1, b: 0, a: 1}
   m_BuildTextureStacks: []

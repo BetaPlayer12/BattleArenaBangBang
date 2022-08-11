@@ -313,7 +313,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_reference: {fileID: 2602964035606938533}
-  m_data: {fileID: 0}
+  m_data: {fileID: 11400000, guid: 2e6f11abf96c8f04b9ff339c7483f233, type: 2}
   m_bulletPhysics: Projectile 1
 --- !u!114 &3301808754072552976
 MonoBehaviour:
