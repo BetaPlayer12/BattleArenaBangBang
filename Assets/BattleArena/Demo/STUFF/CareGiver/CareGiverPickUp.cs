@@ -12,17 +12,10 @@ public class CareGiverPickUp : PickupItem
 
     protected override void Pickup(Collider2D collision)
     {
-        //Instantiate(shield, collision.gameObject.transform);
-
-        //var character = CombatManager.GetOpponentData(collision.GetComponent<Character>());
-
         Character[] list = FindObjectsOfType(typeof(Character)) as Character[];
         foreach (Character obj in list)
         {
             Instantiate(shield, obj.gameObject.transform);          
         }
-
-        //Instantiate(shield, character.gameObject.transform);
-        //character.shield.AddValue(1);
     }
 }

@@ -10,6 +10,7 @@ public class BlackOutItemPickUp : PickupItem
 
     protected override void Pickup(Collider2D collision)
     {
-        Instantiate(blackOutPrefab, collision.transform.position, Quaternion.identity, null);
+        Camera maincam = GameObject.Find("Main Camera").GetComponent<Camera>();
+        Instantiate(blackOutPrefab, new Vector3(maincam.transform.position.x, maincam.transform.position.y, 0), Quaternion.identity, null);
     }
 }
