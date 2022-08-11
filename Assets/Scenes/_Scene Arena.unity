@@ -13412,7 +13412,7 @@ MonoBehaviour:
   m_player2UI: {fileID: 345206680}
   m_playerInputTemplate: {fileID: 260171836461841204, guid: 7b02a52941ef18e4493fda051f6acaa7,
     type: 3}
-  m_defaultWeapon: {fileID: 11400000, guid: 736e49d4f39f29e48ab5750b9d9c4247, type: 2}
+  m_defaultWeapon: {fileID: 11400000, guid: 3ab498af0c513ee489ca50a7377dc137, type: 2}
 --- !u!114 &554638470
 MonoBehaviour:
   m_ObjectHideFlags: 0
