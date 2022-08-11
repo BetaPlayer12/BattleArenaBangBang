@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92c7e79a2f05ab04bb32201348e5acbd, type: 3}
+  m_Name: Cyborgerist 1
+  m_EditorClassIdentifier: 
+  m_name: Cyborgerist
+  m_profilePic: {fileID: 21300000, guid: 9997dcb1d13ae8d499f59267edf358c1, type: 3}
+  m_prefab: {fileID: 5859033480895852522, guid: ad005fb91ffab8a408ab96e37ea3debd,
+    type: 3}
+  m_statData: {fileID: 11400000, guid: 0c9c11eaffafe6f479ade49d7ac3ffaf, type: 2}
