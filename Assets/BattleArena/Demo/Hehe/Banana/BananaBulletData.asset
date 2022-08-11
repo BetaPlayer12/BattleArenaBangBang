@@ -12,4 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4f0174865c6e864f95bd442335e4184, type: 3}
   m_Name: BananaBulletData
   m_EditorClassIdentifier: 
-  m_impactFx: {fileID: 0}
+  m_impactFx: {fileID: 2616229075441661776, guid: 6bdef0dc3677aad458cef9b7a8014e90,
+    type: 3}

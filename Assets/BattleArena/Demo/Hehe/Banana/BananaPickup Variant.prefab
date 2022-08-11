@@ -7,6 +7,12 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2410398587194143245, guid: 385b4aa2506b52642a1e493057a08282,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e155978cba8710348be7fbf729311991,
+        type: 3}
     - target: {fileID: 3544865584688330534, guid: 385b4aa2506b52642a1e493057a08282,
         type: 3}
       propertyPath: m_RootOrder
@@ -71,7 +77,32 @@ PrefabInstance:
     - target: {fileID: 7713897003626552589, guid: 385b4aa2506b52642a1e493057a08282,
         type: 3}
       propertyPath: m_Name
-      value: ElectricFrisbeePickup Variant
+      value: BananaPickup Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 9178303632285771116, guid: 385b4aa2506b52642a1e493057a08282,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.34075975
+      objectReference: {fileID: 0}
+    - target: {fileID: 9178303632285771116, guid: 385b4aa2506b52642a1e493057a08282,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.34075975
+      objectReference: {fileID: 0}
+    - target: {fileID: 9178303632285771116, guid: 385b4aa2506b52642a1e493057a08282,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.34075975
+      objectReference: {fileID: 0}
+    - target: {fileID: 9178303632285771116, guid: 385b4aa2506b52642a1e493057a08282,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.0018
+      objectReference: {fileID: 0}
+    - target: {fileID: 9178303632285771116, guid: 385b4aa2506b52642a1e493057a08282,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.0018
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 385b4aa2506b52642a1e493057a08282, type: 3}

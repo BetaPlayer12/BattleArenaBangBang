@@ -13,11 +13,11 @@ MonoBehaviour:
   m_Name: TeamFallOfTheOneNetPistolData
   m_EditorClassIdentifier: 
   m_name: TeamFallOfTheOnePistol
-  m_icon: {fileID: 21300000, guid: 763a97f35d5f26d47a43d6953b7707f9, type: 3}
+  m_icon: {fileID: 21300000, guid: ad459b11ec9b7c04687a3b4f5a0cf65f, type: 3}
   m_weaponFireType: 0
   m_pewMechanism:
     m_muzzleFireFX: {fileID: 0}
-    m_bullet: {fileID: 8679006488350286791, guid: 1255c871a5314d344b7a8bd5ecfae520,
+    m_bullet: {fileID: 8679006488350286791, guid: d546676c91116194cbcd0a602b4b5f0c,
       type: 3}
     m_allocatedPoints: 10
     m_bulletSpeed: 25
