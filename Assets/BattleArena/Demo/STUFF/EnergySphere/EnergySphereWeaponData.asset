@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: EnergySphereWeaponData
   m_EditorClassIdentifier: 
   m_name: EnergySphere
-  m_icon: {fileID: 21300000, guid: 3d519bc8e2e7f68479de7bbdf2ecf05d, type: 3}
+  m_icon: {fileID: 21300000, guid: a2b8adf16bab3e5469f4381707aec110, type: 3}
   m_weaponFireType: 0
   m_pewMechanism:
     m_muzzleFireFX: {fileID: 0}

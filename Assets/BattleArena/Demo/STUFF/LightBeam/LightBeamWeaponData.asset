@@ -13,10 +13,11 @@ MonoBehaviour:
   m_Name: LightBeamWeaponData
   m_EditorClassIdentifier: 
   m_name: Light Beam
-  m_icon: {fileID: 21300000, guid: 2fadd18e4b1391e42b5aa2fffbbc42fb, type: 3}
+  m_icon: {fileID: 21300000, guid: c8c9a0461f9c2324c82f44103a7d5a7e, type: 3}
   m_weaponFireType: 0
   m_pewMechanism:
-    m_muzzleFireFX: {fileID: 0}
+    m_muzzleFireFX: {fileID: 3057538255115903398, guid: 59acc63b062789b4b88bb843b34b8cb1,
+      type: 3}
     m_bullet: {fileID: 5850180063524436310, guid: bcceba9abd913db489e19c293a185876,
       type: 3}
     m_allocatedPoints: 0

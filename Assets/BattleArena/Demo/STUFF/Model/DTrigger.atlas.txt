@@ -1,0 +1,69 @@
+
+DTrigger.png
+size: 572,160
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Body
+  rotate: false
+  xy: 339, 46
+  size: 86, 111
+  orig: 86, 111
+  offset: 0, 0
+  index: -1
+Cape
+  rotate: true
+  xy: 249, 15
+  size: 142, 88
+  orig: 142, 88
+  offset: 0, 0
+  index: -1
+Hat
+  rotate: false
+  xy: 480, 9
+  size: 89, 54
+  orig: 89, 54
+  offset: 0, 0
+  index: -1
+Head
+  rotate: false
+  xy: 480, 65
+  size: 90, 92
+  orig: 90, 92
+  offset: 0, 0
+  index: -1
+L_Arm
+  rotate: true
+  xy: 427, 55
+  size: 102, 51
+  orig: 102, 51
+  offset: 0, 0
+  index: -1
+L_Pistol
+  rotate: true
+  xy: 430, 2
+  size: 51, 15
+  orig: 51, 15
+  offset: 0, 0
+  index: -1
+Layer 1
+  rotate: false
+  xy: 2, 3
+  size: 245, 154
+  orig: 245, 154
+  offset: 0, 0
+  index: -1
+R_Arm
+  rotate: false
+  xy: 339, 3
+  size: 89, 41
+  orig: 89, 41
+  offset: 0, 0
+  index: -1
+R_Pistol
+  rotate: true
+  xy: 447, 2
+  size: 51, 15
+  orig: 51, 15
+  offset: 0, 0
+  index: -1
