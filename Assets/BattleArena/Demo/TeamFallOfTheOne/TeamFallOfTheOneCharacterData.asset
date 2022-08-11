@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_name: TeamFallOfTheOne
   m_profilePic: {fileID: 21300000, guid: 2921a45b8f2e6904897cf235346b3ec9, type: 3}
-  m_prefab: {fileID: 5651865775784651190, guid: e4bd931404ce5d84ea132f0e9c1df152,
+  m_prefab: {fileID: 5651865775784651190, guid: 4bb624c0dfad74946a414fbada62e769,
     type: 3}
-  m_statData: {fileID: 11400000, guid: 07ee44c39b4e0594ea9d6e70bbefa6df, type: 2}
+  m_statData: {fileID: 0}

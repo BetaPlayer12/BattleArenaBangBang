@@ -43,7 +43,7 @@ ParticleSystem:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 718141926879985137}
   serializedVersion: 8
-  lengthInSec: 3
+  lengthInSec: 0.16
   simulationSpeed: 1
   stopAction: 2
   cullingMode: 0
@@ -4884,9 +4884,9 @@ PointEffector2D:
   m_ColliderMask:
     serializedVersion: 2
     m_Bits: 768
-  m_ForceMagnitude: 1000
+  m_ForceMagnitude: 5000
   m_ForceVariation: 0
-  m_DistanceScale: 1000
+  m_DistanceScale: 5000
   m_ForceSource: 0
   m_ForceTarget: 0
   m_ForceMode: 0
@@ -4907,4 +4907,4 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 5
+  m_Radius: 7
