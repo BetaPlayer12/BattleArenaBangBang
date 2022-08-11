@@ -4,7 +4,7 @@ using BattleArena.Gameplay.Combat;
 using BattleArena.Gameplay.Systems;
 using UnityEngine;
 
-namespace BattleArena.Chewy
+namespace BattleArena.Nonami.KillSwitch
 {
     public class KillSwitchPickup : PickupItem
     {

@@ -1,7 +1,7 @@
 using System.Collections;
 using UnityEngine;
 
-namespace BattleArena.Chewy
+namespace BattleArena.Nonami.FlameThrower
 {
    
     public class Flame : MonoBehaviour

@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace BattleArena.Chewy
+namespace BattleArena.Nonami.ShieldWall
 {
     public class ShieldWall : MonoBehaviour
     {
