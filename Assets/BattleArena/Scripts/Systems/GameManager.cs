@@ -26,7 +26,7 @@ namespace BattleArena.Gameplay
         private GameTimer m_timer;
 
         [SerializeField]
-        private PickupSpawnHandle m_pickupSpawnHandle;
+        private PickupSpawnHandle[] m_pickupSpawnHandles;
         [SerializeField]
         private ArenaShrinker m_arenaShrinker;
 
@@ -36,6 +36,7 @@ namespace BattleArena.Gameplay
 
         public void StartCombat()
         {
+            RemoveAllBUllets();
             m_playerManager.SetPlayersToInitialize(m_characterSelectManager.CreateCharacterInitializationCommand());
             var instanceInfo = m_playerManager.CreatePlayerCharacters();
             m_combatManager.SetPlayers(instanceInfo.p1, instanceInfo.p2);
@@ -49,6 +50,7 @@ namespace BattleArena.Gameplay
 
         public void ResetCombat()
         {
+            RemoveAllBUllets();
             m_combatManager.ResetPlayerStates();
             m_playerManager.EnablePlayerControllers(false);
             m_timer.ResetTime();
@@ -62,7 +64,10 @@ namespace BattleArena.Gameplay
         {
             m_combatManager.ClearCache();
             m_playerManager.DestroyAllPlayerCharacters();
-            m_pickupSpawnHandle.enabled = false;
+            for (int i = 0; i < m_pickupSpawnHandles.Length; i++)
+            {
+                m_pickupSpawnHandles[i].enabled = false;
+            }
             m_arenaShrinker.enabled = false;
         }
 
@@ -87,8 +92,12 @@ namespace BattleArena.Gameplay
 
         private IEnumerator StartCombatCountdownRoutine()
         {
-            m_pickupSpawnHandle.Reset();
-            m_pickupSpawnHandle.enabled = false;
+            for (int i = 0; i < m_pickupSpawnHandles.Length; i++)
+            {
+                var handle = m_pickupSpawnHandles[i];
+                handle.Reset();
+                handle.enabled = false;
+            }
             m_arenaShrinker.Reset();
             m_arenaShrinker.enabled = false;
             m_playerManager.EnablePlayerControllers(false);
@@ -98,7 +107,10 @@ namespace BattleArena.Gameplay
             m_combatCountdownHandle.ForceStopExecution();
             m_playerManager.EnablePlayerControllers(true);
             GameEventMessage.SendEvent("StartTimerOver");
-            m_pickupSpawnHandle.enabled = true;
+            for (int i = 0; i < m_pickupSpawnHandles.Length; i++)
+            {
+                m_pickupSpawnHandles[i].enabled = true;
+            }
             m_arenaShrinker.enabled = true;
             m_timer.StartTime();
         }
@@ -131,11 +143,23 @@ namespace BattleArena.Gameplay
             }
         }
 
+        private void RemoveAllBUllets()
+        {
+            var bullets = FindObjectsOfType<Bullet>();
+            for (int i = bullets.Length - 1; i >= 0; i--)
+            {
+                Destroy(bullets[i].gameObject);
+            }
+        }
+
         private void Awake()
         {
             m_combatManager.PlayerWon += OnPlayerWon;
             m_timer.TimeUpdated += OnTimerUpdate;
-            m_pickupSpawnHandle.enabled = false;
+            for (int i = 0; i < m_pickupSpawnHandles.Length; i++)
+            {
+                m_pickupSpawnHandles[i].enabled = false;
+            }
             m_arenaShrinker.enabled = false;
         }
 

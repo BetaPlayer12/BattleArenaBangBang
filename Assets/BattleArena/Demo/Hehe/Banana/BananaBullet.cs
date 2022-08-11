@@ -7,6 +7,11 @@ using UnityEngine;
 
 public class BananaBullet : Bullet
 {
+    [SerializeField]
+    private Transform m_model;
+    [SerializeField]
+    private float m_modelRotation;
+
     protected override void OnCollision(Collider2D collision)
     {
         var character = collision.GetComponent<CharacterRotation>();
@@ -16,5 +21,10 @@ public class BananaBullet : Bullet
             character.Execute(rotation.x * -1, rotation.y * -1);
         }
         base.OnCollision(collision);
+    }
+
+    private void Update()
+    {
+        m_model.Rotate(0, 0, m_modelRotation);
     }
 }

@@ -7,7 +7,9 @@ namespace BattleArena.Gameplay.Inputs
 {
     public class InputTranslator : MonoBehaviour
     {
+        [SerializeField]
         private Vector2Translator m_movementAxisInput;
+        [SerializeField]
         private Vector2Translator m_rotationAxisInput;
         [SerializeField]
         private ButtonTranslator m_weaponInput;
@@ -20,14 +22,24 @@ namespace BattleArena.Gameplay.Inputs
         public float rotationVerticalInput => m_rotationAxisInput.value.y;
         public ButtonTranslator weaponInput => m_weaponInput;
 
-        private void OnMove(InputValue inputValue)
+        private void OnHorizontalMove(InputValue inputValue)
         {
-            m_movementAxisInput.TranslateInput(inputValue);
+            m_movementAxisInput.TranslateXInput(inputValue);
         }
 
-        private void OnRotate(InputValue inputValue)
+        private void OnVerticalMove(InputValue inputValue)
         {
-            m_rotationAxisInput.TranslateInput(inputValue);
+            m_movementAxisInput.TranslateYInput(inputValue);
+        }
+
+        private void OnHorizontalRotate(InputValue inputValue)
+        {
+            m_rotationAxisInput.TranslateXInput(inputValue);
+        }
+
+        private void OnVerticalRotate(InputValue inputValue)
+        {
+            m_rotationAxisInput.TranslateYInput(inputValue);
         }
 
         private void OnWeaponFire(InputValue inputValue)

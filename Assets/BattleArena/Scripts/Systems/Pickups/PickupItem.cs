@@ -1,3 +1,4 @@
+using Sirenix.OdinInspector;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -12,6 +13,7 @@ namespace BattleArena
 
         public event Action<PickupItem> PickedUp;
 
+        [Button]
         protected abstract void Pickup(Collider2D collision);
 
         private void Update()
@@ -19,7 +21,6 @@ namespace BattleArena
             m_lifeTime -= Time.deltaTime;
             if(m_lifeTime <= 0)
             {
-                PickedUp?.Invoke(this);
                 Destroy(gameObject);
             }
         }
@@ -29,9 +30,13 @@ namespace BattleArena
             if (collision.CompareTag("Hitbox"))
             {
                 Pickup(collision);
-                PickedUp?.Invoke(this);
                 Destroy(gameObject);
             }
+        }
+
+        private void OnDestroy()
+        {
+            PickedUp?.Invoke(this);
         }
     }
 }

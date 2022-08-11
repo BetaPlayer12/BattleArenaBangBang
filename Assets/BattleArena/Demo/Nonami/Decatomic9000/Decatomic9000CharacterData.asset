@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92c7e79a2f05ab04bb32201348e5acbd, type: 3}
+  m_Name: Decatomic9000CharacterData
+  m_EditorClassIdentifier: 
+  m_name: Decatomic 9000
+  m_profilePic: {fileID: 21300000, guid: a871a95b9234e2e469185f6719e62d81, type: 3}
+  m_prefab: {fileID: 5525825975964992126, guid: 98036efbe0a14624bb67e58a352f1838,
+    type: 3}
+  m_statData: {fileID: 11400000, guid: 0e7e0212a7cebff41a9b5f10b0459180, type: 2}

@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa5c67383b7b4234ba0b04594ce0c59d, type: 3}
   m_Name: BananaData
   m_EditorClassIdentifier: 
-  m_name: Banana
-  m_icon: {fileID: 21300000, guid: 2efdb18e92f29a74aae9d8a53988c224, type: 3}
+  m_name: Bananananana!!!!!
+  m_icon: {fileID: 21300000, guid: e155978cba8710348be7fbf729311991, type: 3}
   m_weaponFireType: 0
   m_pewMechanism:
     m_muzzleFireFX: {fileID: 0}

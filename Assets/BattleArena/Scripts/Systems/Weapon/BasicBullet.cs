@@ -10,7 +10,7 @@ namespace BattleArena
     public abstract class Bullet : MonoBehaviour
     {
         [SerializeField]
-        private float m_speed = 30;
+        protected float m_speed = 30;
         [SerializeField]
         protected BulletData m_data;
 
@@ -21,6 +21,11 @@ namespace BattleArena
             m_speed = speed;
         }
 
+        public void ForceCollision()
+        {
+            OnCollision(null);
+        }
+
         protected virtual void OnCollision(Collider2D collision)
         {
             Destroy(gameObject);
@@ -29,7 +34,10 @@ namespace BattleArena
 
         protected virtual void MoveBullet()
         {
-            m_rigidbody.velocity = transform.right * m_speed;
+            if(m_rigidbody != null)
+            {
+                m_rigidbody.velocity = transform.right * m_speed;
+            }
         }
 
         private bool IsCollidable(Collider2D collider) => collider.CompareTag("Wall") || collider.CompareTag("Hitbox");

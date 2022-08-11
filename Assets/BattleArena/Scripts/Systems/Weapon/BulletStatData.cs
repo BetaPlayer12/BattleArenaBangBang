@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace BattleArena
 {
-    [CreateAssetMenu(fileName = "BulletStatData",menuName = "BattleArenaBangBang/Weapon/Bullet Stat Data")]
+    [CreateAssetMenu(fileName = "BulletStatData",menuName = "BattleArenaBangBang/Weapons/Bullet Stat Data")]
     public class BulletStatData : ScriptableObject
     {
         [SerializeField, ReadOnly]
@@ -33,9 +33,9 @@ namespace BattleArena
         private void Reset()
         {
             m_allocatedPoints = 5;
-            m_bulletSpeed = 25;
-            m_bulletDamage = 5;
-            m_firingRate = 1.2f;
+            m_bulletSpeed = 0;
+            m_bulletDamage = 0;
+            m_firingRate = 0;
         }
 
         [Button("-"), HorizontalGroup("Bullet Speed")]
