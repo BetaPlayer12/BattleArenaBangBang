@@ -3,8 +3,6 @@
     public enum WeaponFireType
     {
         Pew,
-        Charge,
-        Lob
     }
 
 }

@@ -24,10 +24,6 @@ namespace BattleArena
             {
                 case WeaponFireType.Pew:
                     return new PewMechanism(m_pewMechanism);
-                case WeaponFireType.Charge:
-                    break;
-                case WeaponFireType.Lob:
-                    break;
             }
 
             return null;
