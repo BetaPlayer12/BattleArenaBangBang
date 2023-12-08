@@ -9781,12 +9781,12 @@ PrefabInstance:
     - target: {fileID: 1508550591191752325, guid: ce144b4bcae511c40b43d2622dc7ca65,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 86.03436
+      value: 86.034355
       objectReference: {fileID: 0}
     - target: {fileID: 1508550591191752325, guid: ce144b4bcae511c40b43d2622dc7ca65,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -0.79434204
+      value: -0.7943573
       objectReference: {fileID: 0}
     - target: {fileID: 1942885152412229943, guid: ce144b4bcae511c40b43d2622dc7ca65,
         type: 3}
@@ -21144,7 +21144,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &701299016
 RectTransform:
   m_ObjectHideFlags: 0
@@ -42274,6 +42274,9 @@ MonoBehaviour:
   m_player1: {fileID: 5103003383926320346}
   m_player2: {fileID: 1369316562}
   m_startCombatButton: {fileID: 1826839285}
+  m_startCombatButtonBackground: {fileID: 1826839286}
+  m_notReadyForCombatColor: {r: 0.6132076, g: 0.6132076, b: 0.6132076, a: 1}
+  m_readyForCombatColor: {r: 0.112086125, g: 0.10946953, b: 0.11320752, a: 1}
 --- !u!1 &1685967367
 GameObject:
   m_ObjectHideFlags: 0
@@ -52443,10 +52446,10 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 0.050980393, g: 0.050980393, b: 0.050980393, a: 1}
-    m_HighlightedColor: {r: 0.050980393, g: 0.050980393, b: 0.050980393, a: 1}
-    m_PressedColor: {r: 0.050980393, g: 0.050980393, b: 0.050980393, a: 1}
-    m_SelectedColor: {r: 0.047169805, g: 0.047169805, b: 0.047169805, a: 1}
+    m_NormalColor: {r: 0.23529413, g: 0.20784315, b: 0.24705884, a: 1}
+    m_HighlightedColor: {r: 0.23529413, g: 0.20784315, b: 0.24705884, a: 1}
+    m_PressedColor: {r: 0.23529413, g: 0.20784315, b: 0.24705884, a: 1}
+    m_SelectedColor: {r: 0.23529413, g: 0.20784315, b: 0.24705884, a: 1}
     m_DisabledColor: {r: 0.76470596, g: 0.7568628, b: 0.7686275, a: 1}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -58724,12 +58727,12 @@ PrefabInstance:
     - target: {fileID: 1508550591191752325, guid: ce144b4bcae511c40b43d2622dc7ca65,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 86.03436
+      value: 86.034355
       objectReference: {fileID: 0}
     - target: {fileID: 1508550591191752325, guid: ce144b4bcae511c40b43d2622dc7ca65,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -0.79434204
+      value: -0.7943573
       objectReference: {fileID: 0}
     - target: {fileID: 2851549639496923765, guid: ce144b4bcae511c40b43d2622dc7ca65,
         type: 3}
