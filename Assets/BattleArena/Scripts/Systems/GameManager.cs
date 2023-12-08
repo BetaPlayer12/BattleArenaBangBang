@@ -19,6 +19,8 @@ namespace BattleArena.Gameplay
         [SerializeField]
         private CombatManager m_combatManager;
         [SerializeField]
+        private MapManager m_mapManager;
+        [SerializeField]
         private CombatCountdownHandle m_combatCountdownHandle;
         [SerializeField]
         private CombatResultHandle m_combatResultHandle;
@@ -88,7 +90,6 @@ namespace BattleArena.Gameplay
             StopAllCoroutines();
             StartCoroutine(StartCombatCountdownRoutine());
         }
-
 
         private IEnumerator StartCombatCountdownRoutine()
         {
