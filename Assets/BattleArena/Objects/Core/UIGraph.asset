@@ -315,6 +315,102 @@ MonoBehaviour:
   - Category: Combat
     InstantAction: 0
     Name: CombatResult
+--- !u!114 &-7347239553813546138
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 840a439e06374673a9115ed02deb5a54, type: 3}
+  m_Name: UINode
+  m_EditorClassIdentifier: 
+  ErrorNodeNameIsEmpty: 0
+  ErrorDuplicateNameFoundInGraph: 0
+  m_inputSockets:
+  - m_connectionMode: 1
+    m_connections:
+    - m_inputConnectionPoint: {x: 202, y: 4}
+      m_outputConnectionPoint: {x: 202, y: 4}
+      m_id: 79c99643-a73b-4a94-b6ad-286f0aba6b03
+      m_inputNodeId: 4b873831-0641-469b-881a-2d7c49caa68b
+      m_inputSocketId: 339c47d2-f9de-4180-ad85-8eb2564967a7
+      m_outputNodeId: 16a68966-6859-45ac-a244-b02628172c43
+      m_outputSocketId: 5d853578-6144-4884-add4-b1f5f7b1d47c
+    m_connectionPoints:
+    - {x: -2, y: 4}
+    - {x: 202, y: 4}
+    m_direction: 0
+    m_canBeDeleted: 0
+    m_canBeReordered: 0
+    m_curveModifier: 0
+    m_height: 24
+    m_width: 216
+    m_x: 0
+    m_y: 38
+    m_id: 339c47d2-f9de-4180-ad85-8eb2564967a7
+    m_nodeId: 4b873831-0641-469b-881a-2d7c49caa68b
+    m_socketName: InputSocket_0
+    m_value: '{"ButtonCategory":"General","ButtonName":"Unnamed","GameEvent":"","TimeDelay":3.0,"Trigger":0}'
+    m_valueTypeQualifiedName: Doozy.Engine.UI.Connections.UIConnection, Assembly-CSharp,
+      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_outputSockets:
+  - m_connectionMode: 0
+    m_connections:
+    - m_inputConnectionPoint: {x: 202, y: 4}
+      m_outputConnectionPoint: {x: 202, y: 4}
+      m_id: 6b197e52-877e-473b-afa7-e08d19d4ea74
+      m_inputNodeId: 16a68966-6859-45ac-a244-b02628172c43
+      m_inputSocketId: 0c1d0d5a-0899-42ab-babe-9cd6d5447bb4
+      m_outputNodeId: 4b873831-0641-469b-881a-2d7c49caa68b
+      m_outputSocketId: cc9a22dc-ae34-442e-8cf3-f13bc9661951
+    m_connectionPoints:
+    - {x: -2, y: 4}
+    - {x: 202, y: 4}
+    m_direction: 1
+    m_canBeDeleted: 1
+    m_canBeReordered: 1
+    m_curveModifier: 0
+    m_height: 24
+    m_width: 216
+    m_x: 0
+    m_y: 62
+    m_id: cc9a22dc-ae34-442e-8cf3-f13bc9661951
+    m_nodeId: 4b873831-0641-469b-881a-2d7c49caa68b
+    m_socketName: OutputSocket_0
+    m_value: '{"ButtonCategory":"Pause","ButtonName":"Resume","GameEvent":"","TimeDelay":3.0,"Trigger":0}'
+    m_valueTypeQualifiedName: Doozy.Engine.UI.Connections.UIConnection, Assembly-CSharp,
+      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_nodeType: 4
+  m_allowDuplicateNodeName: 0
+  m_allowEmptyNodeName: 0
+  m_canBeDeleted: 1
+  m_debugMode: 0
+  m_useFixedUpdate: 0
+  m_useLateUpdate: 0
+  m_useUpdate: 0
+  m_height: 128
+  m_width: 216
+  m_x: 1656
+  m_y: 216
+  m_minimumInputSocketsCount: 1
+  m_minimumOutputSocketsCount: 1
+  m_graphId: ea1a7fee-3112-4a2e-87bd-329c7c5a0ee9
+  m_id: 4b873831-0641-469b-881a-2d7c49caa68b
+  m_name: Control Pause
+  m_notes: 
+  m_onEnterShowViews:
+  - Category: Combat
+    InstantAction: 1
+    Name: Controls
+  m_onEnterHideViews: []
+  m_onExitShowViews: []
+  m_onExitHideViews:
+  - Category: Combat
+    InstantAction: 1
+    Name: Controls
 --- !u!114 &-6810816947380286540
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -609,6 +705,13 @@ MonoBehaviour:
       m_inputSocketId: 0c1d0d5a-0899-42ab-babe-9cd6d5447bb4
       m_outputNodeId: caef0d38-91e2-4a8c-9948-fcaa973d81d0
       m_outputSocketId: c0ff5ca8-dbb6-4d5c-bd37-43c959770ddd
+    - m_inputConnectionPoint: {x: 202, y: 4}
+      m_outputConnectionPoint: {x: 202, y: 4}
+      m_id: 6b197e52-877e-473b-afa7-e08d19d4ea74
+      m_inputNodeId: 16a68966-6859-45ac-a244-b02628172c43
+      m_inputSocketId: 0c1d0d5a-0899-42ab-babe-9cd6d5447bb4
+      m_outputNodeId: 4b873831-0641-469b-881a-2d7c49caa68b
+      m_outputSocketId: cc9a22dc-ae34-442e-8cf3-f13bc9661951
     m_connectionPoints:
     - {x: -2, y: 4}
     - {x: 202, y: 4}
@@ -731,6 +834,32 @@ MonoBehaviour:
     m_value: '{"ButtonCategory":"Pause","ButtonName":"Reset","GameEvent":"","TimeDelay":3.0,"Trigger":0}'
     m_valueTypeQualifiedName: Doozy.Engine.UI.Connections.UIConnection, Assembly-CSharp,
       Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  - m_connectionMode: 0
+    m_connections:
+    - m_inputConnectionPoint: {x: 202, y: 4}
+      m_outputConnectionPoint: {x: 202, y: 4}
+      m_id: 79c99643-a73b-4a94-b6ad-286f0aba6b03
+      m_inputNodeId: 4b873831-0641-469b-881a-2d7c49caa68b
+      m_inputSocketId: 339c47d2-f9de-4180-ad85-8eb2564967a7
+      m_outputNodeId: 16a68966-6859-45ac-a244-b02628172c43
+      m_outputSocketId: 5d853578-6144-4884-add4-b1f5f7b1d47c
+    m_connectionPoints:
+    - {x: -2, y: 4}
+    - {x: 202, y: 4}
+    m_direction: 1
+    m_canBeDeleted: 1
+    m_canBeReordered: 1
+    m_curveModifier: 0
+    m_height: 24
+    m_width: 216
+    m_x: 0
+    m_y: 158
+    m_id: 5d853578-6144-4884-add4-b1f5f7b1d47c
+    m_nodeId: 16a68966-6859-45ac-a244-b02628172c43
+    m_socketName: OutputSocket_4
+    m_value: '{"ButtonCategory":"Pause","ButtonName":"Controls","GameEvent":"","TimeDelay":3.0,"Trigger":0}'
+    m_valueTypeQualifiedName: Doozy.Engine.UI.Connections.UIConnection, Assembly-CSharp,
+      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
   m_nodeType: 4
   m_allowDuplicateNodeName: 0
   m_allowEmptyNodeName: 0
@@ -739,7 +868,7 @@ MonoBehaviour:
   m_useFixedUpdate: 0
   m_useLateUpdate: 0
   m_useUpdate: 0
-  m_height: 200
+  m_height: 224
   m_width: 216
   m_x: 1644
   m_y: -24
@@ -1087,11 +1216,12 @@ MonoBehaviour:
   - {fileID: 7571667130236470172}
   - {fileID: -6810816947380286540}
   - {fileID: 4709988754457409610}
+  - {fileID: -7347239553813546138}
   m_isSubGraph: 0
   m_version: 1
   m_description: 
   m_id: ea1a7fee-3112-4a2e-87bd-329c7c5a0ee9
-  m_lastModified: 133464886395593245
+  m_lastModified: 133464918943914210
 --- !u!114 &182010302584720959
 MonoBehaviour:
   m_ObjectHideFlags: 1
