@@ -33,6 +33,11 @@ namespace BattleArena.Gameplay
             {
                 for(int c = 0; c < m_maps.Count; c++)
                 {
+                    int skipDecider = Random.Range(0, 2);
+
+                    if (skipDecider == 0)
+                        break;
+
                     icon.sprite = m_maps[c].mapIcon.sprite;
                     chosenMap = c;
 

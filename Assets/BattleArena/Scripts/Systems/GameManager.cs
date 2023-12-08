@@ -66,6 +66,7 @@ namespace BattleArena.Gameplay
         {
             m_combatManager.ClearCache();
             m_playerManager.DestroyAllPlayerCharacters();
+            RemoveAllMaps();
             for (int i = 0; i < m_pickupSpawnHandles.Length; i++)
             {
                 m_pickupSpawnHandles[i].enabled = false;
@@ -150,6 +151,15 @@ namespace BattleArena.Gameplay
             for (int i = bullets.Length - 1; i >= 0; i--)
             {
                 Destroy(bullets[i].gameObject);
+            }
+        }
+
+        private void RemoveAllMaps()
+        {
+            var maps = FindObjectsOfType<Map>();
+            for (int i = maps.Length - 1; i >= 0; i--)
+            {
+                Destroy(maps[i].gameObject);
             }
         }
 
