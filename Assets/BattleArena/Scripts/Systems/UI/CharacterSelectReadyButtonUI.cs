@@ -16,26 +16,29 @@ namespace BattleArena.Gameplay.UI
         {
             if (isTrue)
             {
-                if (m_hasDisplayedIsReady)
-                {
-                    m_buttonText.text = "Definitely Ready!!!";
-                }
-                else
-                {
-                    m_buttonText.text = "Ready!";
-                    m_hasDisplayedIsReady = true;
-                }
+                //if (m_hasDisplayedIsReady)
+                //{
+                //    m_buttonText.text = "Definitely Ready!!!";
+                //}
+                //else
+                //{
+                //    m_buttonText.text = "Ready!";
+                //    m_hasDisplayedIsReady = true;
+                //}
+                m_buttonText.text = "Ready!";
+                //m_hasDisplayedIsReady = true;
             }
             else
             {
-                if (m_hasDisplayedIsReady)
-                {
-                    m_buttonText.text = "Clearly Not Ready";
-                }
-                else
-                {
-                    m_buttonText.text = "Not Ready";
-                }
+                //if (m_hasDisplayedIsReady)
+                //{
+                //    m_buttonText.text = "Clearly Not Ready";
+                //}
+                //else
+                //{
+                //    m_buttonText.text = "Not Ready";
+                //}
+                m_buttonText.text = "Not Ready";
             }
         }
 
