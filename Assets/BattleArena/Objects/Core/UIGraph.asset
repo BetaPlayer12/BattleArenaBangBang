@@ -188,7 +188,7 @@ MonoBehaviour:
   m_onExitShowViews: []
   m_onExitHideViews:
   - Category: Combat
-    InstantAction: 0
+    InstantAction: 1
     Name: CombatStartTimer
 --- !u!114 &-8143545216256147565
 MonoBehaviour:
@@ -304,13 +304,13 @@ MonoBehaviour:
   m_notes: 
   m_onEnterShowViews:
   - Category: Combat
-    InstantAction: 0
+    InstantAction: 1
     Name: CombatEndMenu
   m_onEnterHideViews: []
   m_onExitShowViews: []
   m_onExitHideViews:
   - Category: Combat
-    InstantAction: 0
+    InstantAction: 1
     Name: CombatEndMenu
   - Category: Combat
     InstantAction: 0
@@ -880,13 +880,13 @@ MonoBehaviour:
   m_notes: 
   m_onEnterShowViews:
   - Category: Combat
-    InstantAction: 0
+    InstantAction: 1
     Name: Pause
   m_onEnterHideViews: []
   m_onExitShowViews: []
   m_onExitHideViews:
   - Category: Combat
-    InstantAction: 0
+    InstantAction: 1
     Name: Pause
 --- !u!114 &-2360478253800220566
 MonoBehaviour:
@@ -1012,13 +1012,13 @@ MonoBehaviour:
     InstantAction: 1
     Name: Main Menu
   - Category: Main Menu
-    InstantAction: 0
+    InstantAction: 1
     Name: Player Select
   m_onEnterHideViews: []
   m_onExitShowViews: []
   m_onExitHideViews:
   - Category: Main Menu
-    InstantAction: 0
+    InstantAction: 1
     Name: Player Select
 --- !u!114 &-1416171936046986767
 MonoBehaviour:
@@ -1108,7 +1108,7 @@ MonoBehaviour:
   m_notes: 
   m_onEnterShowViews:
   - Category: Combat
-    InstantAction: 0
+    InstantAction: 1
     Name: CombatResult
   m_onEnterHideViews: []
   m_onExitShowViews: []
@@ -1319,11 +1319,11 @@ MonoBehaviour:
   m_onEnterHideViews: []
   m_onExitShowViews:
   - Category: General
-    InstantAction: 0
+    InstantAction: 1
     Name: Main Menu
   m_onExitHideViews:
   - Category: General
-    InstantAction: 0
+    InstantAction: 1
     Name: Combat UI
 --- !u!114 &1315019027318764078
 MonoBehaviour:
@@ -1619,7 +1619,7 @@ MonoBehaviour:
     InstantAction: 1
     Name: Main Menu
   - Category: Main Menu
-    InstantAction: 0
+    InstantAction: 1
     Name: Title
   m_onEnterHideViews:
   - Category: Combat
@@ -1643,7 +1643,7 @@ MonoBehaviour:
   m_onExitShowViews: []
   m_onExitHideViews:
   - Category: Main Menu
-    InstantAction: 0
+    InstantAction: 1
     Name: Title
 --- !u!114 &4709988754457409610
 MonoBehaviour:
