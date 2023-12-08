@@ -19,3 +19,4 @@ MonoBehaviour:
   - CombatStartTimer
   - CombatEndMenu
   - CombatResult
+  - Controls

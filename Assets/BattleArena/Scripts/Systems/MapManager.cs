@@ -11,6 +11,8 @@ namespace BattleArena.Gameplay
         private List<Map> m_maps;
         [SerializeField]
         private Transform m_playField;
+        [SerializeField]
+        private int m_mapSelectTime;
 
         public void SelectMap(Image mapIcon)
         {
@@ -24,17 +26,22 @@ namespace BattleArena.Gameplay
 
         private IEnumerator RandomMapSelect(Image icon)
         {
-            int secondsOfSelecting = (int)Random.Range(5, 10);
             int chosenMap = 0;
+            int timesToGoThroughMaps = m_mapSelectTime;
 
-            for(int i = 0; i <= secondsOfSelecting; i++)
+            while(timesToGoThroughMaps > 0)
             {
-                int randomChoice = (int)Random.Range(0, m_maps.Count);
-                icon.sprite = m_maps[randomChoice].mapIcon.sprite;
-                chosenMap = randomChoice;
+                for(int c = 0; c < m_maps.Count; c++)
+                {
+                    icon.sprite = m_maps[c].mapIcon.sprite;
+                    chosenMap = c;
 
-                yield return new WaitForSeconds(0.3f);               
+                    yield return new WaitForSeconds(0.3f);
+                }
+
+                timesToGoThroughMaps--;
             }
+
             icon.sprite = m_maps[chosenMap].mapIcon.sprite;
             SpawnSelectedMap(m_maps[chosenMap].gameObject);
         }
