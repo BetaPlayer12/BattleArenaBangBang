@@ -7,6 +7,6 @@ namespace BattleArena.Gameplay
 {
     public class Map : MonoBehaviour
     {
-        public Image mapIcon;
+        public Sprite mapIcon;
     }
 }

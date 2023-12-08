@@ -35,7 +35,7 @@ namespace BattleArena.Gameplay
                 {
                     for (int c = 0; c < m_maps.Count; c++)
                     {
-                        icon.sprite = m_maps[c].mapIcon.sprite;
+                        icon.sprite = m_maps[c].mapIcon;
                         chosenMap = c;
 
                         yield return new WaitForSeconds(0.3f);
@@ -44,7 +44,7 @@ namespace BattleArena.Gameplay
                 else
                 {
                     int randomChoice = Random.Range(0, m_maps.Count);
-                    icon.sprite = m_maps[randomChoice].mapIcon.sprite;
+                    icon.sprite = m_maps[randomChoice].mapIcon;
                     chosenMap = randomChoice;
                     yield return new WaitForSeconds(0.3f);
                 }
@@ -53,7 +53,7 @@ namespace BattleArena.Gameplay
                 timesToGoThroughMaps--;
             }
 
-            icon.sprite = m_maps[chosenMap].mapIcon.sprite;
+            icon.sprite = m_maps[chosenMap].mapIcon;
             SpawnSelectedMap(m_maps[chosenMap].gameObject);
         }
     }
