@@ -1,6 +1,7 @@
 ﻿using BattleArena.Gameplay.Characters;
 using System;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace BattleArena.Gameplay.UI
 {
@@ -13,6 +14,12 @@ namespace BattleArena.Gameplay.UI
         [SerializeField]
         private CharacterSelectReadyButtonUI m_readyButton;
         private int m_currentIndex;
+        [SerializeField]
+        private Color m_readyColor;
+        [SerializeField]
+        private Color m_notReadyColor;
+        [SerializeField]
+        private Image m_backgroundImage;
 
         public event Action ReadinessChange;
         public bool isReady { get; private set; }
@@ -24,6 +31,7 @@ namespace BattleArena.Gameplay.UI
             m_currentIndex = (int)Mathf.Repeat(m_currentIndex + 1, m_dataList.count);
             SelectCharacter(m_currentIndex);
             m_readyButton.DisplayIsReady(false);
+            m_backgroundImage.color = m_notReadyColor;
             isReady = false;
             ReadinessChange?.Invoke();
         }
@@ -33,6 +41,7 @@ namespace BattleArena.Gameplay.UI
             m_currentIndex = (int)Mathf.Repeat(m_currentIndex - 1, m_dataList.count);
             SelectCharacter(m_currentIndex);
             m_readyButton.DisplayIsReady(false);
+            m_backgroundImage.color = m_notReadyColor;
             isReady = false;
             ReadinessChange?.Invoke();
         }
@@ -41,6 +50,7 @@ namespace BattleArena.Gameplay.UI
         {
             m_readyButton.DisplayIsReady(true);
             isReady = true;
+            m_backgroundImage.color = m_readyColor;
             ReadinessChange?.Invoke();
         }
 
