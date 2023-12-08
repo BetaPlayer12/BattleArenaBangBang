@@ -12,7 +12,7 @@ namespace BattleArena.Gameplay
         [SerializeField]
         private Transform m_playField;
         [SerializeField]
-        private int m_mapSelectTime;
+        private int m_timesToIterateMaps;
 
         public void SelectMap(Image mapIcon)
         {
@@ -27,22 +27,28 @@ namespace BattleArena.Gameplay
         private IEnumerator RandomMapSelect(Image icon)
         {
             int chosenMap = 0;
-            int timesToGoThroughMaps = m_mapSelectTime;
+            int timesToGoThroughMaps = m_timesToIterateMaps;
 
             while(timesToGoThroughMaps > 0)
             {
-                for(int c = 0; c < m_maps.Count; c++)
+                if(timesToGoThroughMaps > 1)
                 {
-                    int skipDecider = Random.Range(0, 2);
+                    for (int c = 0; c < m_maps.Count; c++)
+                    {
+                        icon.sprite = m_maps[c].mapIcon.sprite;
+                        chosenMap = c;
 
-                    if (skipDecider == 0)
-                        break;
-
-                    icon.sprite = m_maps[c].mapIcon.sprite;
-                    chosenMap = c;
-
+                        yield return new WaitForSeconds(0.3f);
+                    }
+                }
+                else
+                {
+                    int randomChoice = Random.Range(0, m_maps.Count);
+                    icon.sprite = m_maps[randomChoice].mapIcon.sprite;
+                    chosenMap = randomChoice;
                     yield return new WaitForSeconds(0.3f);
                 }
+                
 
                 timesToGoThroughMaps--;
             }

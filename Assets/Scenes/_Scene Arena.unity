@@ -20382,7 +20382,7 @@ MonoBehaviour:
   - {fileID: 5001397522252705613, guid: fa9e7438823a57d4b9e88913351f87eb, type: 3}
   - {fileID: 8952280952380352721, guid: c25c94e38e8a64641b6889433163c90a, type: 3}
   m_playField: {fileID: 1014459324}
-  m_timesToIterateMaps: 0
+  m_timesToIterateMaps: 5
 --- !u!1 &573395003
 GameObject:
   m_ObjectHideFlags: 0
@@ -58821,6 +58821,16 @@ PrefabInstance:
     - target: {fileID: 4604725601900840140, guid: ce144b4bcae511c40b43d2622dc7ca65,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5913898998998812662, guid: ce144b4bcae511c40b43d2622dc7ca65,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5913898998998812662, guid: ce144b4bcae511c40b43d2622dc7ca65,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6761633350998337612, guid: ce144b4bcae511c40b43d2622dc7ca65,
