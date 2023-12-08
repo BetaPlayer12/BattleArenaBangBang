@@ -20382,7 +20382,7 @@ MonoBehaviour:
   - {fileID: 5001397522252705613, guid: fa9e7438823a57d4b9e88913351f87eb, type: 3}
   - {fileID: 8952280952380352721, guid: c25c94e38e8a64641b6889433163c90a, type: 3}
   m_playField: {fileID: 1014459324}
-  m_mapSelectTime: 5
+  m_timesToIterateMaps: 0
 --- !u!1 &573395003
 GameObject:
   m_ObjectHideFlags: 0
@@ -58663,11 +58663,6 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1942885152412229943, guid: ce144b4bcae511c40b43d2622dc7ca65,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 3527927751156961183, guid: ce144b4bcae511c40b43d2622dc7ca65,
         type: 3}
       propertyPath: m_AnchorMax.y
@@ -58848,11 +58843,6 @@ PrefabInstance:
       propertyPath: m_textInfo.characterCount
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6839386222009226343, guid: ce144b4bcae511c40b43d2622dc7ca65,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 7052551823290676767, guid: ce144b4bcae511c40b43d2622dc7ca65,
         type: 3}
       propertyPath: m_Color.a
@@ -58862,11 +58852,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PlayerUI
-      objectReference: {fileID: 0}
-    - target: {fileID: 7361840391430366780, guid: ce144b4bcae511c40b43d2622dc7ca65,
-        type: 3}
-      propertyPath: m_AdditionalShaderChannelsFlag
-      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 8419205037805607460, guid: ce144b4bcae511c40b43d2622dc7ca65,
         type: 3}

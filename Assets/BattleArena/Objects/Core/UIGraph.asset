@@ -1609,7 +1609,7 @@ MonoBehaviour:
   AnyValue: 0
   IgnoreUnityTimescale: 1
   RandomDuration: 0
-  Duration: 10
+  Duration: 5
   DurationMax: 1
   DurationMin: 0
   SceneBuildIndex: 0
