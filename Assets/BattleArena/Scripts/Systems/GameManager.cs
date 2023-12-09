@@ -7,6 +7,7 @@ using BattleArena.Gameplay.Characters;
 using System;
 using BattleArena.Gameplay.UI;
 using BattleArena.Gameplay.Systems;
+using UnityEngine.UI;
 
 namespace BattleArena.Gameplay
 {
@@ -35,6 +36,11 @@ namespace BattleArena.Gameplay
         [SerializeField, MinValue(1)]
         private int m_combatCountdownDuration;
         private bool m_forceTimerReset;
+
+        [SerializeField, BoxGroup("Menu UI to Reset")]
+        private Image m_mapSelectImage;
+        [SerializeField, BoxGroup("Menu UI to Reset")]
+        private CharacterSelectManager m_charSelectManager;
 
         public void StartCombat()
         {
@@ -72,6 +78,7 @@ namespace BattleArena.Gameplay
                 m_pickupSpawnHandles[i].enabled = false;
             }
             m_arenaShrinker.enabled = false;
+            ResetMainMenuUI();
         }
 
         public void Pause()
@@ -161,6 +168,12 @@ namespace BattleArena.Gameplay
             {
                 Destroy(maps[i].gameObject);
             }
+        }
+
+        private void ResetMainMenuUI()
+        {
+            m_mapManager.ResetMapSelection(m_mapSelectImage);
+            m_characterSelectManager.Reset();
         }
 
         private void Awake()

@@ -64,6 +64,7 @@ namespace BattleArena.Gameplay.UI
             m_currentIndex = 0;
             SelectCharacter(m_currentIndex);
             isReady = false;
+            m_backgroundImage.color = m_notReadyColor;
             m_readyButton.Reset();
         }
 

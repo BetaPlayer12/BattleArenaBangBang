@@ -19,6 +19,11 @@ namespace BattleArena.Gameplay
             StartCoroutine(RandomMapSelect(mapIcon));
         }
 
+        public void ResetMapSelection(Image mapIcon)
+        {
+            mapIcon.sprite = null;
+        }
+
         private void SpawnSelectedMap(GameObject map)
         {
             Instantiate(map).transform.SetParent(m_playField);
