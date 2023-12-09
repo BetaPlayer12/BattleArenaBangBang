@@ -13,6 +13,8 @@ namespace BattleArena.Gameplay.Characters
         private GameObject m_prefab;
         [SerializeField]
         private CharacterStatData m_statData;
+        [SerializeField]
+        private Sprite m_winningSplashArt;
 
         public string characterName => m_name;
         public Sprite profilePic => m_profilePic;

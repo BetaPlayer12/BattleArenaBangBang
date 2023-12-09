@@ -17,3 +17,4 @@ MonoBehaviour:
   m_prefab: {fileID: 5859033480895852522, guid: ad005fb91ffab8a408ab96e37ea3debd,
     type: 3}
   m_statData: {fileID: 11400000, guid: 0c9c11eaffafe6f479ade49d7ac3ffaf, type: 2}
+  m_winningSplashArt: {fileID: 21300000, guid: 3ed06ff299084f142896f085fb86d6ce, type: 3}
