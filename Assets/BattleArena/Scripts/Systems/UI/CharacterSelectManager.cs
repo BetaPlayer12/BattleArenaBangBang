@@ -21,6 +21,8 @@ namespace BattleArena.Gameplay.Menu
         private Color m_notReadyForCombatColor;
         [SerializeField]
         private Color m_readyForCombatColor;
+        [SerializeField]
+        private Image m_lightningReady;
 
         public InitializationCommand CreateCharacterInitializationCommand() => new InitializationCommand(m_player1.GetSelectedCharacter(), m_player2.GetSelectedCharacter());
 
@@ -30,10 +32,12 @@ namespace BattleArena.Gameplay.Menu
             if (m_startCombatButton.interactable)
             {
                 m_startCombatButtonBackground.color = m_readyForCombatColor;
+                m_lightningReady.gameObject.SetActive(true);
             }
             else
             {
                 m_startCombatButtonBackground.color = m_notReadyForCombatColor;
+                m_lightningReady.gameObject.SetActive(false);
             }
         }
 
@@ -42,12 +46,14 @@ namespace BattleArena.Gameplay.Menu
             m_player1.Reset();
             m_player2.Reset();
             m_startCombatButtonBackground.color = m_notReadyForCombatColor;
+            m_lightningReady.gameObject.SetActive(false);
         }
 
         private void Awake()
         {
             m_player1.ReadinessChange += OnPlayerReadinessChange;
             m_player2.ReadinessChange += OnPlayerReadinessChange;
+            m_lightningReady.gameObject.SetActive(false);
         }
 
     }

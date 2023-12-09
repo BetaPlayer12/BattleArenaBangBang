@@ -15,9 +15,9 @@ namespace BattleArena.Gameplay.UI
         private CharacterSelectReadyButtonUI m_readyButton;
         private int m_currentIndex;
         [SerializeField]
-        private Color m_readyColor;
+        private Sprite m_readySprite;
         [SerializeField]
-        private Color m_notReadyColor;
+        private Sprite m_notReadySprite;
         [SerializeField]
         private Image m_backgroundImage;
 
@@ -31,7 +31,7 @@ namespace BattleArena.Gameplay.UI
             m_currentIndex = (int)Mathf.Repeat(m_currentIndex + 1, m_dataList.count);
             SelectCharacter(m_currentIndex);
             m_readyButton.DisplayIsReady(false);
-            m_backgroundImage.color = m_notReadyColor;
+            m_backgroundImage.sprite = m_notReadySprite;
             isReady = false;
             ReadinessChange?.Invoke();
         }
@@ -41,7 +41,7 @@ namespace BattleArena.Gameplay.UI
             m_currentIndex = (int)Mathf.Repeat(m_currentIndex - 1, m_dataList.count);
             SelectCharacter(m_currentIndex);
             m_readyButton.DisplayIsReady(false);
-            m_backgroundImage.color = m_notReadyColor;
+            m_backgroundImage.sprite = m_notReadySprite;
             isReady = false;
             ReadinessChange?.Invoke();
         }
@@ -50,7 +50,7 @@ namespace BattleArena.Gameplay.UI
         {
             m_readyButton.DisplayIsReady(true);
             isReady = true;
-            m_backgroundImage.color = m_readyColor;
+            m_backgroundImage.sprite = m_readySprite;
             ReadinessChange?.Invoke();
         }
 
@@ -64,7 +64,7 @@ namespace BattleArena.Gameplay.UI
             m_currentIndex = 0;
             SelectCharacter(m_currentIndex);
             isReady = false;
-            m_backgroundImage.color = m_notReadyColor;
+            m_backgroundImage.sprite = m_notReadySprite;
             m_readyButton.Reset();
         }
 
