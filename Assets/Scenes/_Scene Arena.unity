@@ -8731,6 +8731,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 359822208}
+        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &359822209
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20427,6 +20439,7 @@ MonoBehaviour:
   - {fileID: 2126349073240175678, guid: 3ed1cd4c76b55094a8c127a1cc07e58a, type: 3}
   m_playField: {fileID: 1014459324}
   m_timesToIterateMaps: 5
+  m_battleButton: {fileID: 359822208}
 --- !u!1 &573395003
 GameObject:
   m_ObjectHideFlags: 0

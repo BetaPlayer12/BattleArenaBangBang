@@ -13,6 +13,8 @@ namespace BattleArena.Gameplay
         private Transform m_playField;
         [SerializeField]
         private int m_timesToIterateMaps;
+        [SerializeField]
+        private Button m_battleButton;
 
         public void SelectMap(Image mapIcon)
         {
@@ -22,6 +24,7 @@ namespace BattleArena.Gameplay
         public void ResetMapSelection(Image mapIcon)
         {
             mapIcon.sprite = null;
+            m_battleButton.enabled = true;
         }
 
         private void SpawnSelectedMap(GameObject map)
