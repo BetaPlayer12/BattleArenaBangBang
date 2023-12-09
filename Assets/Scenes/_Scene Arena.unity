@@ -20383,6 +20383,8 @@ MonoBehaviour:
   - {fileID: 1704594822}
   m_arenaShrinker: {fileID: 483737641}
   m_combatCountdownDuration: 4
+  m_mapSelectImage: {fileID: 2071925317}
+  m_charSelectManager: {fileID: 1648547780}
 --- !u!114 &554638471
 MonoBehaviour:
   m_ObjectHideFlags: 0
