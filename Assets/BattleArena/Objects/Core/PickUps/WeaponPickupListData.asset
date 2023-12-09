@@ -12,4 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14aae77b8f267774cb831f1e0566062f, type: 3}
   m_Name: WeaponPickupListData
   m_EditorClassIdentifier: 
-  m_items: []
+  m_items:
+  - {fileID: -6272455201051253628, guid: 89b150b9c632db545bab35b0c6f1f65f, type: 3}
