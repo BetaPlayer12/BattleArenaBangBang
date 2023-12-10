@@ -19,6 +19,7 @@ namespace BattleArena.Gameplay.Characters
         public string characterName => m_name;
         public Sprite profilePic => m_profilePic;
         public GameObject prefab => m_prefab;
+        public Sprite winningSplashArt => m_winningSplashArt;
 
         public CharacterStatData statData => m_statData;
     }
