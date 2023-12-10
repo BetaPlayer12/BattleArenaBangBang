@@ -20,3 +20,4 @@ MonoBehaviour:
   - CombatEndMenu
   - CombatResult
   - Controls
+  - SplashScreen
