@@ -9827,12 +9827,12 @@ PrefabInstance:
     - target: {fileID: 1508550591191752325, guid: ce144b4bcae511c40b43d2622dc7ca65,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 35.299988
+      value: -0.1000061
       objectReference: {fileID: 0}
     - target: {fileID: 1508550591191752325, guid: ce144b4bcae511c40b43d2622dc7ca65,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 5.100006
+      value: 2.199997
       objectReference: {fileID: 0}
     - target: {fileID: 1942885152412229943, guid: ce144b4bcae511c40b43d2622dc7ca65,
         type: 3}
@@ -61380,6 +61380,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PlayerUI
+      objectReference: {fileID: 0}
+    - target: {fileID: 7285195936657162143, guid: ce144b4bcae511c40b43d2622dc7ca65,
+        type: 3}
+      propertyPath: m_nonShieldedColor.b
+      value: 0.3019608
+      objectReference: {fileID: 0}
+    - target: {fileID: 7285195936657162143, guid: ce144b4bcae511c40b43d2622dc7ca65,
+        type: 3}
+      propertyPath: m_nonShieldedColor.g
+      value: 0.59607846
       objectReference: {fileID: 0}
     - target: {fileID: 7990898050267861684, guid: ce144b4bcae511c40b43d2622dc7ca65,
         type: 3}
