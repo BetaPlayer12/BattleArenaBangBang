@@ -8,7 +8,7 @@ using UnityEngine;
 public class PickupSpawnHandle : MonoBehaviour
 {
     [SerializeField]
-    private PickupItemListData m_itemList;
+    private PickupItemListRandomizer m_itemRandomizer;
     [SerializeField]
     private Collider2D m_spawnArea;
     [SerializeField]
@@ -26,8 +26,7 @@ public class PickupSpawnHandle : MonoBehaviour
 
     private void SpawnItem()
     {
-        var chosenItemIndex = UnityEngine.Random.Range(0, m_itemList.count);
-        var chosenItem = m_itemList.GetItem(chosenItemIndex);
+        var chosenItem = m_itemRandomizer.GetRandomItem();
         var instance = Instantiate(chosenItem.gameObject).GetComponent<PickupItem>();
         m_spawnedItems.Add(instance);
         instance.PickedUp += OnItemPickup;
