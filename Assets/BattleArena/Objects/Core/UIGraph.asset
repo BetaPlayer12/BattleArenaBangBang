@@ -1085,7 +1085,7 @@ MonoBehaviour:
     m_id: 3627637f-52ef-4969-9624-64d72554341d
     m_nodeId: 07503b02-5b5e-4b85-800e-f6b5cf830d4d
     m_socketName: OutputSocket_0
-    m_value: '{"ButtonCategory":"General","ButtonName":"Back","GameEvent":"","TimeDelay":5.0,"Trigger":4}'
+    m_value: '{"ButtonCategory":"General","ButtonName":"Back","GameEvent":"","TimeDelay":7.0,"Trigger":4}'
     m_valueTypeQualifiedName: Doozy.Engine.UI.Connections.UIConnection, Assembly-CSharp,
       Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
   m_nodeType: 4
@@ -1110,6 +1110,9 @@ MonoBehaviour:
   - Category: Combat
     InstantAction: 1
     Name: CombatResult
+  - Category: Combat
+    InstantAction: 0
+    Name: SplashScreen
   m_onEnterHideViews: []
   m_onExitShowViews: []
   m_onExitHideViews: []
@@ -1221,7 +1224,7 @@ MonoBehaviour:
   m_version: 1
   m_description: 
   m_id: ea1a7fee-3112-4a2e-87bd-329c7c5a0ee9
-  m_lastModified: 133464918943914210
+  m_lastModified: 133466628524302327
 --- !u!114 &182010302584720959
 MonoBehaviour:
   m_ObjectHideFlags: 1
