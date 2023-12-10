@@ -1,0 +1,107 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &3747325111603175886
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2002971508084235920, guid: d685a90a0cbee344ca873114e4d62a41,
+        type: 3}
+      propertyPath: m_Name
+      value: Rifle Pickup
+      objectReference: {fileID: 0}
+    - target: {fileID: 2657763919739626045, guid: d685a90a0cbee344ca873114e4d62a41,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 0.61960787
+      objectReference: {fileID: 0}
+    - target: {fileID: 2657763919739626045, guid: d685a90a0cbee344ca873114e4d62a41,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 0.909804
+      objectReference: {fileID: 0}
+    - target: {fileID: 2657763919739626045, guid: d685a90a0cbee344ca873114e4d62a41,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 0.8705883
+      objectReference: {fileID: 0}
+    - target: {fileID: 4753369063735981243, guid: d685a90a0cbee344ca873114e4d62a41,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4753369063735981243, guid: d685a90a0cbee344ca873114e4d62a41,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -14.038025
+      objectReference: {fileID: 0}
+    - target: {fileID: 4753369063735981243, guid: d685a90a0cbee344ca873114e4d62a41,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -10.958145
+      objectReference: {fileID: 0}
+    - target: {fileID: 4753369063735981243, guid: d685a90a0cbee344ca873114e4d62a41,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4753369063735981243, guid: d685a90a0cbee344ca873114e4d62a41,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4753369063735981243, guid: d685a90a0cbee344ca873114e4d62a41,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4753369063735981243, guid: d685a90a0cbee344ca873114e4d62a41,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4753369063735981243, guid: d685a90a0cbee344ca873114e4d62a41,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4753369063735981243, guid: d685a90a0cbee344ca873114e4d62a41,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4753369063735981243, guid: d685a90a0cbee344ca873114e4d62a41,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4753369063735981243, guid: d685a90a0cbee344ca873114e4d62a41,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5635012211409059638, guid: d685a90a0cbee344ca873114e4d62a41,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 0.2509804
+      objectReference: {fileID: 0}
+    - target: {fileID: 5635012211409059638, guid: d685a90a0cbee344ca873114e4d62a41,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 0.26666668
+      objectReference: {fileID: 0}
+    - target: {fileID: 5635012211409059638, guid: d685a90a0cbee344ca873114e4d62a41,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 0.2509804
+      objectReference: {fileID: 0}
+    - target: {fileID: 5887835510332060048, guid: d685a90a0cbee344ca873114e4d62a41,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: d0c0f1ca2bebc3f49982c81329cbb97e,
+        type: 3}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d685a90a0cbee344ca873114e4d62a41, type: 3}
