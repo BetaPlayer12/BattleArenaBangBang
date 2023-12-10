@@ -9696,7 +9696,7 @@ PrefabInstance:
     - target: {fileID: 795021280961912017, guid: ce144b4bcae511c40b43d2622dc7ca65,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -0.00680542
+      value: -0.0067749023
       objectReference: {fileID: 0}
     - target: {fileID: 826541269500964193, guid: ce144b4bcae511c40b43d2622dc7ca65,
         type: 3}
@@ -30294,6 +30294,11 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1747727986614417617, guid: 30c60f779e7b98e419d946d0741d44ad,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1963946257219633601, guid: 30c60f779e7b98e419d946d0741d44ad,
         type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -30793,6 +30798,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7562075034707118833, guid: 30c60f779e7b98e419d946d0741d44ad,
         type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: b24f6d157c4f8304a91f8acbd9b241ab,
+        type: 3}
+    - target: {fileID: 7562075034707118833, guid: 30c60f779e7b98e419d946d0741d44ad,
+        type: 3}
       propertyPath: m_Color.b
       value: 1
       objectReference: {fileID: 0}
@@ -30881,7 +30892,7 @@ PrefabInstance:
     - target: {fileID: 8512956918279172262, guid: 30c60f779e7b98e419d946d0741d44ad,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8512956918279172262, guid: 30c60f779e7b98e419d946d0741d44ad,
         type: 3}
@@ -36549,6 +36560,7 @@ GameObject:
   - component: {fileID: 1563199889}
   - component: {fileID: 1563199888}
   - component: {fileID: 1563199887}
+  - component: {fileID: 1563199890}
   m_Layer: 0
   m_Name: Lightning
   m_TagString: Untagged
@@ -36607,13 +36619,34 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1648547773}
-  m_RootOrder: 2
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 50.121, y: 0.00030518}
   m_SizeDelta: {x: 545.056, y: 1080.3}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!223 &1563199890
+Canvas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1563199886}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 2
+  m_Camera: {fileID: 0}
+  m_PlaneDistance: 100
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 1
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_AdditionalShaderChannelsFlag: 25
+  m_SortingLayerID: -524349771
+  m_SortingOrder: 1
+  m_TargetDisplay: 0
 --- !u!1 &1572251650
 GameObject:
   m_ObjectHideFlags: 0
@@ -41955,9 +41988,9 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 1563199889}
   - {fileID: 5103003383926320345}
   - {fileID: 1369316561}
-  - {fileID: 1563199889}
   - {fileID: 1826839282}
   - {fileID: 801433278}
   m_Father: {fileID: 2132550520}
@@ -50755,6 +50788,7 @@ GameObject:
   - component: {fileID: 1826839285}
   - component: {fileID: 1826839284}
   - component: {fileID: 1826839283}
+  - component: {fileID: 1826839288}
   m_Layer: 0
   m_Name: Button - Play
   m_TagString: Untagged
@@ -53170,6 +53204,27 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1826839281}
   m_CullTransparentMesh: 0
+--- !u!223 &1826839288
+Canvas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1826839281}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 2
+  m_Camera: {fileID: 0}
+  m_PlaneDistance: 100
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 1
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_AdditionalShaderChannelsFlag: 25
+  m_SortingLayerID: -524349771
+  m_SortingOrder: 2
+  m_TargetDisplay: 0
 --- !u!1 &1836358303
 GameObject:
   m_ObjectHideFlags: 0
@@ -59539,6 +59594,11 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1508550591191752325, guid: ce144b4bcae511c40b43d2622dc7ca65,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0.38726807
+      objectReference: {fileID: 0}
     - target: {fileID: 2851549639496923765, guid: ce144b4bcae511c40b43d2622dc7ca65,
         type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -60987,7 +61047,7 @@ PrefabInstance:
     - target: {fileID: 8512956918279172262, guid: 30c60f779e7b98e419d946d0741d44ad,
         type: 3}
       propertyPath: m_RootOrder
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8512956918279172262, guid: 30c60f779e7b98e419d946d0741d44ad,
         type: 3}
