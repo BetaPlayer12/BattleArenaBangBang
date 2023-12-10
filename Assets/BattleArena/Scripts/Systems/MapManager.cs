@@ -15,6 +15,12 @@ namespace BattleArena.Gameplay
         private int m_timesToIterateMaps;
         [SerializeField]
         private Button m_battleButton;
+        [SerializeField]
+        private Sprite m_mapNotSelected;
+        [SerializeField]
+        private Sprite m_mapSelected;
+        [SerializeField]
+        private Image m_background;
 
         public void SelectMap(Image mapIcon)
         {
@@ -25,6 +31,7 @@ namespace BattleArena.Gameplay
         {
             mapIcon.sprite = null;
             m_battleButton.enabled = true;
+            m_background.sprite = m_mapNotSelected;
         }
 
         private void SpawnSelectedMap(GameObject map)
@@ -54,6 +61,7 @@ namespace BattleArena.Gameplay
                     int randomChoice = Random.Range(0, m_maps.Count);
                     icon.sprite = m_maps[randomChoice].mapIcon;
                     chosenMap = randomChoice;
+                    m_background.sprite = m_mapSelected;
                     yield return new WaitForSeconds(0.3f);
                 }
                 
