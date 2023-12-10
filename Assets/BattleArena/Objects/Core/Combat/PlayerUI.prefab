@@ -1082,7 +1082,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_bar: {fileID: 8098698048300800794}
   m_shieldedColor: {r: 0, g: 0.6784314, b: 1, a: 1}
-  m_nonShieldedColor: {r: 1, g: 0, b: 0, a: 1}
+  m_nonShieldedColor: {r: 1, g: 0.59607846, b: 0.3019608, a: 1}
 --- !u!1 &3825621463057852752
 GameObject:
   m_ObjectHideFlags: 0
@@ -1271,7 +1271,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.20287356, y: 0.73800004}
   m_AnchorMax: {x: 0.5804384, y: 0.9425826}
-  m_AnchoredPosition: {x: 0.3872528, y: 0.7039795}
+  m_AnchoredPosition: {x: 0.38726807, y: 0.7039795}
   m_SizeDelta: {x: -0.99885845, y: 2.477491}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4961620714005986312
