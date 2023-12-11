@@ -10,8 +10,14 @@ PrefabInstance:
     - target: {fileID: 2487787988184196389, guid: 8bd2bc898827c784386a165d49a3b99f,
         type: 3}
       propertyPath: m_Name
-      value: SuperShieldPickup
+      value: SuperShieldPickup2
       objectReference: {fileID: 0}
+    - target: {fileID: 2780528505188262803, guid: 8bd2bc898827c784386a165d49a3b99f,
+        type: 3}
+      propertyPath: m_shieldVisual
+      value: 
+      objectReference: {fileID: 1991591397294234052, guid: e01a2a98b3748e3468ffb98ba430fbc8,
+        type: 3}
     - target: {fileID: 8699483321726750478, guid: 8bd2bc898827c784386a165d49a3b99f,
         type: 3}
       propertyPath: m_RootOrder
