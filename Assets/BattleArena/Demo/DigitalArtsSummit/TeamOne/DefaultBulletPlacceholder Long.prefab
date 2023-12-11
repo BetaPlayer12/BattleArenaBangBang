@@ -7,6 +7,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1227937741002133065, guid: 155af0dad039a4547bfae077671c6b4e,
+        type: 3}
+      propertyPath: m_lifeTimeInSeconds
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4679054963500535488, guid: 155af0dad039a4547bfae077671c6b4e,
+        type: 3}
+      propertyPath: m_data
+      value: 
+      objectReference: {fileID: 11400000, guid: decb4a04a26c567489cdd6fa6f6bfb35,
+        type: 2}
     - target: {fileID: 4679054963500535489, guid: 155af0dad039a4547bfae077671c6b4e,
         type: 3}
       propertyPath: m_Size.x

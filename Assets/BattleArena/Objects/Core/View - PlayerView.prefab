@@ -1629,7 +1629,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 45.95
+  m_fontSize: 45.9
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -5005,7 +5005,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f49b615d39c9be54399e414d96bafab6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_dataList: {fileID: 11400000, guid: 74ac9f0c6fd6c4e468096e8e8923848d, type: 2}
+  m_dataList: {fileID: 11400000, guid: 8e559d7236d7baa4f93cf77134de31ad, type: 2}
   m_viewCharacterUI: {fileID: 2495952239636952148}
   m_readyButton: {fileID: 5658918340962220226}
   m_readySprite: {fileID: 0}
