@@ -17,7 +17,7 @@ MonoBehaviour:
   m_weaponFireType: 0
   m_pewMechanism:
     m_muzzleFireFX: {fileID: 0}
-    m_bullet: {fileID: 8349796232343882090, guid: f831b152ef032f548a9637e5ca09c395,
+    m_bullet: {fileID: 5600935044130419154, guid: 4491c7bf7194adc4cb9e27750abf5dd2,
       type: 3}
     m_allocatedPoints: 10
     m_bulletSpeed: 25
