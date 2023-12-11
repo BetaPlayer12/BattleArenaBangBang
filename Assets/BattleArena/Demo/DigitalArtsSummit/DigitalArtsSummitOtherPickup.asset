@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14aae77b8f267774cb831f1e0566062f, type: 3}
+  m_Name: DigitalArtsSummitOtherPickup
+  m_EditorClassIdentifier: 
+  m_items:
+  - {fileID: 3781850632125845045, guid: f04f91b55676d5844977637fae9c6209, type: 3}
+  - {fileID: 2215143165542039178, guid: 1394fda4955611d48be7b646305fe368, type: 3}
