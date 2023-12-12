@@ -32,7 +32,7 @@ namespace BattleArena.Gameplay.UI
                 m_winnerName.text = winnerData.characterName;
                 m_loserName.text = loserData.characterName;
                 m_otherMessage.text = "Was Defeated By";
-                m_winningSplashArt.sprite = winnerData.winningSplashArt;
+                m_winningSplashArt.sprite = loserData.winningSplashArt;
             }
         }
     }

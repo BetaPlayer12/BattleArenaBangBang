@@ -207,7 +207,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be2dadf389a6056458784c9ace07b913, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_lifeTimeInSeconds: 3
+  m_lifeTimeInSeconds: 0.7
   m_bullet: {fileID: 3039313232959539483}
 --- !u!114 &3039313232959539483 stripped
 MonoBehaviour:

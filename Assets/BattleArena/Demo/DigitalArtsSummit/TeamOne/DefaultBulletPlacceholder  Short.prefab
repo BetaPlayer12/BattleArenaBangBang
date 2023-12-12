@@ -10,7 +10,7 @@ PrefabInstance:
     - target: {fileID: 1227937741002133065, guid: 155af0dad039a4547bfae077671c6b4e,
         type: 3}
       propertyPath: m_lifeTimeInSeconds
-      value: 3
+      value: 0.7
       objectReference: {fileID: 0}
     - target: {fileID: 4679054963500535488, guid: 155af0dad039a4547bfae077671c6b4e,
         type: 3}

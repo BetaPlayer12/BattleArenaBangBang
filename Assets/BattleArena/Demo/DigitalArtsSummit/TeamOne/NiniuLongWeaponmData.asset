@@ -19,7 +19,7 @@ MonoBehaviour:
     m_muzzleFireFX: {fileID: 0}
     m_bullet: {fileID: 5600935044130419154, guid: 4491c7bf7194adc4cb9e27750abf5dd2,
       type: 3}
-    m_allocatedPoints: 10
+    m_allocatedPoints: 5
     m_bulletSpeed: 25
-    m_bulletDamage: 5
+    m_bulletDamage: 15
     m_firingRate: 1.2
